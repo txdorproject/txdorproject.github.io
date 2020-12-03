@@ -1,3 +1,89 @@
-p {
-    color: red;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(85deg,#d64c7f,#ee4758 50%);
+}
+
+.section_hamburger{
+    width: fit-content;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    i {
+        font-weight: 300;
+        font-size: 25px;
+    }
+}
+
+.section_header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section_all {
+    width: 90%;
+    margin: 0 auto;
+    .section_presentation {
+        margin-top: 2.5rem;
+        .title_fadeup {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            p {
+                margin: 10px 10px 10px 0;
+                font-size: 28px;
+                font-weight: bold;
+                color: whitesmoke;
+            }
+        }
+        .explanation_agency {
+            h1 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.55;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: rgb(248, 248, 248);
+            }
+            h3 {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.55;
+                margin-top: 35px;
+                margin-bottom: 40px;
+                color: rgb(248, 248, 248);
+            }
+        }
+        .btn_contact {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            button {
+                border: solid 1px rgb(247, 247, 247);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 0;
+                border-radius: 10px;
+                width: 70%;
+                font-family: 'Roboto', sans-serif;
+                a {
+                    text-decoration: none;
+                    color: #ee4758;
+                    font-weight: 600;
+                }
+                i {
+                    font-size: 17px;
+                    margin-left: 10px;
+                    color: #585252;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
 }
