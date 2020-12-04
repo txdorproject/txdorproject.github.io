@@ -27,6 +27,11 @@ body {
 }
 .scrollToTop.active {
   display: flex;
+  transition: ease-in 0.2s;
+}
+.scrollToTop:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
 }
 
 .section_hamburger {
@@ -280,10 +285,11 @@ body {
 .section_header .btn_contact_desktop button:hover {
   background-color: whitesmoke;
   border-color: whitesmoke;
+  box-shadow: 0 2px 6px rgba(85, 85, 85, 0.466);
   transition: ease-in 0.1s;
 }
 .section_header .btn_contact_desktop button:hover a {
-  color: #ee4758 !important;
+  color: #ee4758;
 }
 .section_header .btn_contact_desktop button a {
   text-decoration: none;
@@ -371,6 +377,7 @@ body {
   justify-content: center;
 }
 .section_all .section_presentation .btn_contact button {
+  cursor: pointer;
   border: solid 1px #303030;
   display: flex;
   justify-content: center;
@@ -407,6 +414,18 @@ body {
   100% {
     left: 72%;
   }
+}
+.section_all .section_presentation .btn_contact button:hover {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  box-shadow: 0 2px 6px rgba(85, 85, 85, 0.466);
+  transition: ease-in 0.2s;
+}
+.section_all .section_presentation .btn_contact button:hover a {
+  color: #ee4758;
+}
+.section_all .section_presentation .btn_contact button:hover i {
+  color: #303030;
 }
 .section_all .section_presentation .img_presentation {
   margin-top: 2.5rem;
