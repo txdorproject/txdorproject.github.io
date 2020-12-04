@@ -15,6 +15,25 @@ closeMenu.addEventListener('click', () => {
 })
 
 
+/**
+ * Dropdown menu services
+ */
+
+const services = document.getElementById('services')
+const section_drop_services = document.getElementById('section_drop_services')
+const section_header = document.getElementById('section_header')
+
+services.addEventListener('click', () => {
+  setTimeout(() => {
+    section_drop_services.classList.add('active')
+  },0)
+})
+
+document.body.addEventListener('click', () => {
+  section_drop_services.classList.remove('active')
+})
+
+
 
 /**
  * Scroll to top

@@ -214,6 +214,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 2px;
+  z-index: 999999;
 }
 @media (min-width: 1024px) {
   .section_header {
@@ -295,6 +296,21 @@ body {
   text-decoration: none;
   color: #f0f0f0;
   font-weight: 600;
+}
+
+.section_drop_services {
+  height: 400px;
+  width: 100%;
+  background-color: #1f1f1f;
+  position: fixed;
+  z-index: 99;
+  transform: translateY(-150%);
+  opacity: 1;
+  transition: ease-in-out 0.45s;
+  display: initial;
+}
+.section_drop_services.active {
+  transform: translateY(-28%);
 }
 
 .section_all .section_presentation {

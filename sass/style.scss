@@ -222,6 +222,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
+    z-index: 999999;
 
     @media(min-width:1024px) {
         width: 90%;
@@ -306,6 +307,21 @@ body {
                 font-weight: 600;
             }
         }
+    }
+}
+
+.section_drop_services{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    z-index: 99;
+    transform: translateY(-150%);
+    opacity: 1;
+    transition: ease-in-out .45s;
+    display: initial;
+    &.active {
+        transform: translateY(-28%);
     }
 }
 
