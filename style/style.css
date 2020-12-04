@@ -39,6 +39,11 @@ body {
   font-weight: 300;
   font-size: 25px;
 }
+@media (min-width: 1024px) {
+  .section_hamburger {
+    display: none;
+  }
+}
 
 .menu_mobile {
   width: 100%;
@@ -74,6 +79,11 @@ body {
   padding: 15px 0;
   border-bottom: solid 1px #cecece;
 }
+@media (min-width: 768px) {
+  .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu {
+    align-items: initial;
+  }
+}
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a {
   text-decoration: none;
   display: flex;
@@ -89,10 +99,11 @@ body {
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a p {
   margin: 0;
   margin-left: 10px;
+  font-size: 15px;
   font-weight: bold;
 }
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a .sub_explain {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 13px;
   margin-left: 0;
   padding: 10px 0;
@@ -105,6 +116,11 @@ body {
   margin-left: 24px;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .menu_mobile .services_menu_mobile .block_others {
+    margin-left: 40px;
+  }
 }
 .menu_mobile .services_menu_mobile .block_others a {
   text-decoration: none;
@@ -124,11 +140,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-  border-radius: 10px;
+  border-radius: 25px;
   width: 70%;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(85deg, #d64c7f, #ee4758 50%);
   position: relative;
+}
+@media (min-width: 768px) {
+  .menu_mobile .services_menu_mobile .bloc_contactUs button {
+    width: 35%;
+  }
 }
 .menu_mobile .services_menu_mobile .bloc_contactUs button a {
   text-decoration: none;
@@ -139,7 +160,7 @@ body {
   font-size: 17px;
   margin-left: 10px;
   color: #303030;
-  margin-top: 2px;
+  margin-top: 1px;
   -webkit-animation: linear infinite alternate;
   -webkit-animation-name: run;
   -webkit-animation-duration: 2s;
@@ -168,7 +189,7 @@ body {
 }
 .menu_mobile .close_menu_mobile {
   width: 17%;
-  background-color: #717171;
+  background-color: #717171cc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,12 +202,93 @@ body {
 
 .section_header {
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 16px 0;
   color: whitesmoke;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 2px;
+}
+@media (min-width: 1024px) {
+  .section_header {
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .section_header {
+    margin: 20px auto;
+    width: 63%;
+  }
+}
+.section_header .menu_desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .section_header .menu_desktop {
+    display: flex;
+  }
+}
+.section_header .menu_desktop .all_links {
+  display: flex;
+  align-items: center;
+}
+.section_header .menu_desktop .all_links .services {
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  margin-right: 35px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.section_header .menu_desktop .all_links .services:hover {
+  color: #353535;
+}
+.section_header .menu_desktop .all_links a {
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  color: whitesmoke;
+  margin-right: 35px;
+  font-weight: normal;
+}
+.section_header .menu_desktop .all_links a:hover {
+  color: #353535;
+}
+.section_header .btn_contact_desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .section_header .btn_contact_desktop {
+    display: flex;
+    cursor: pointer;
+  }
+}
+.section_header .btn_contact_desktop button {
+  border: solid 1px #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  background-color: #303030;
+  position: relative;
+  cursor: pointer;
+}
+.section_header .btn_contact_desktop button:hover {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  transition: ease-in 0.1s;
+}
+.section_header .btn_contact_desktop button:hover a {
+  color: #ee4758 !important;
+}
+.section_header .btn_contact_desktop button a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
 }
 
 .section_all .section_presentation {
@@ -194,32 +296,74 @@ body {
   margin: 0 auto;
   margin-top: 2.5rem;
 }
+@media (min-width: 768px) {
+  .section_all .section_presentation {
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_presentation {
+    width: 63%;
+    margin-top: 4rem;
+  }
+}
 .section_all .section_presentation .title_fadeup {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .section_all .section_presentation .title_fadeup {
+    justify-content: center;
+  }
+}
 .section_all .section_presentation .title_fadeup p {
-  margin: 10px 10px 10px 0;
-  font-size: 28px;
+  margin: 6px 10px 6px 0;
+  font-size: 32px;
   font-weight: bold;
   color: whitesmoke;
+}
+@media (min-width: 768px) {
+  .section_all .section_presentation .title_fadeup p {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_presentation .title_fadeup p {
+    font-size: 60px;
+  }
 }
 .section_all .section_presentation .explanation_agency h1 {
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.5;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #f8f8f8;
 }
+@media (min-width: 768px) {
+  .section_all .section_presentation .explanation_agency h1 {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1024px) {
+  .section_all .section_presentation .explanation_agency h1 {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
 .section_all .section_presentation .explanation_agency h3 {
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.5;
   margin-top: 35px;
   margin-bottom: 40px;
   color: #f8f8f8;
+}
+@media (min-width: 768px) {
+  .section_all .section_presentation .explanation_agency h3 {
+    font-size: 17px;
+  }
 }
 .section_all .section_presentation .btn_contact {
   width: 100%;
@@ -231,9 +375,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
-  border-radius: 10px;
-  width: 70%;
+  padding: 15px 70px;
+  border-radius: 25px;
+  width: fit-content;
   font-family: "Roboto", sans-serif;
   background-color: #303030;
   position: relative;
@@ -247,7 +391,7 @@ body {
   font-size: 17px;
   margin-left: 10px;
   color: #eeeeee;
-  margin-top: 2px;
+  margin-top: 0px;
   -webkit-animation: linear infinite alternate;
   -webkit-animation-name: run;
   -webkit-animation-duration: 2s;

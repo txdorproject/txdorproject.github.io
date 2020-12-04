@@ -40,6 +40,10 @@ body {
         font-weight: 300;
         font-size: 25px;
     }
+
+    @media(min-width:1024px) {
+        display: none;
+    }
 }
 
 .menu_mobile {
@@ -75,6 +79,10 @@ body {
                 padding: 15px 0;
                 border-bottom: solid 1px rgb(206, 206, 206);
 
+                @media(min-width:768px) {
+                    align-items: initial;
+                }
+
                 a {
                     text-decoration: none;
                     display: flex;
@@ -91,11 +99,12 @@ body {
                     p {
                         margin: 0;
                         margin-left: 10px;
+                        font-size: 15px;
                         font-weight: bold;
                     }
 
                     .sub_explain {
-                        font-weight: normal;
+                        font-weight: 300;
                         font-size: 13px;
                         margin-left: 0;
                         padding: 10px 0;
@@ -112,6 +121,10 @@ body {
             margin-left: 24px;
             display: flex;
             flex-direction: column;
+
+            @media(min-width:768px) {
+                margin-left: 40px;
+            }
             a {
                 text-decoration: none;
                 color: #1f1f1f;
@@ -131,12 +144,17 @@ body {
                 justify-content: center;
                 align-items: center;
                 padding: 15px 0;
-                border-radius: 10px;
+                border-radius: 25px;
                 width: 70%;
                 font-family: 'Roboto', sans-serif;
                 //background-color: #ee4758;
                 background: linear-gradient(85deg,#d64c7f,#ee4758 50%);
                 position: relative;
+
+                @media(min-width:768px) {
+                    width: 35%;
+                }
+
                 a {
                     text-decoration: none;
                     color: whitesmoke;
@@ -146,7 +164,7 @@ body {
                     font-size: 17px;
                     margin-left: 10px;
                     color: #303030;
-                    margin-top: 2px;
+                    margin-top: 1px;
                     -webkit-animation:linear infinite alternate;
                     -webkit-animation-name: run;
                     -webkit-animation-duration: 2s;
@@ -176,7 +194,7 @@ body {
 
     .close_menu_mobile {
         width: 17%;
-        background-color: #717171;
+        background-color: #717171cc;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -191,12 +209,97 @@ body {
 
 .section_header {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 16px 0;
     color: whitesmoke;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
+
+    @media(min-width:1024px) {
+        width: 90%;
+        margin: 10px auto;
+        justify-content: space-between;
+    }
+
+    @media(min-width:1440px) {
+        margin: 20px auto;
+        width: 63%;
+    }
+
+    .menu_desktop {
+        display: none;
+        @media(min-width:1024px) {
+            display: flex;
+        }
+
+        .all_links {
+            display: flex;
+            align-items: center;
+            .services {
+                font-size: 15px;
+                letter-spacing: .8px;
+                margin-right: 35px;
+                font-weight: normal;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(53, 53, 53);
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                letter-spacing: .8px;
+                color: whitesmoke;
+                margin-right: 35px;
+                font-weight: normal;
+
+                &:hover {
+                    color: rgb(53, 53, 53);
+                }
+            }
+        }
+    }
+
+    .btn_contact_desktop {
+        display: none;
+
+        @media(min-width:1024px) {
+            display: flex;
+            cursor: pointer;
+        }
+
+        button {
+            border: solid 1px #303030;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            padding: 10px 25px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #303030;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background-color: whitesmoke;
+                border-color: whitesmoke;
+                transition: ease-in .1s;
+
+                a {
+                    color: #ee4758 !important;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #f0f0f0;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .section_all {
@@ -204,33 +307,69 @@ body {
         width: 90%;
         margin: 0 auto;
         margin-top: 2.5rem;
+
+        @media(min-width:768px) {
+            text-align: center;
+        }
+
+        @media(min-width:1440px) {
+            width: 63%;
+            margin-top: 4rem;
+        }
+
         .title_fadeup {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
+
+            @media(min-width:768px) {
+                justify-content: center;
+            }
+
             p {
-                margin: 10px 10px 10px 0;
-                font-size: 28px;
+                margin: 6px 10px 6px 0;
+                font-size: 32px;
                 font-weight: bold;
                 color: whitesmoke;
+
+                @media(min-width:768px) {
+                    font-size: 45px;
+                }
+
+                @media(min-width:1440px) {
+                    font-size: 60px;
+                }
             }
         }
         .explanation_agency {
             h1 {
                 font-size: 17px;
                 font-weight: 400;
-                line-height: 1.55;
+                line-height: 1.5;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 color: rgb(248, 248, 248);
+
+                @media(min-width:768px) {
+                    font-size: 19px;
+                }
+
+                @media(min-width:1024px) {
+                    width: 70%;
+                    margin: 20px auto;
+                }
             }
             h3 {
                 font-size: 15px;
                 font-weight: 400;
-                line-height: 1.55;
+                line-height: 1.5;
                 margin-top: 35px;
                 margin-bottom: 40px;
                 color: rgb(248, 248, 248);
+
+                @media(min-width:768px) {
+                    font-size: 17px;
+                }
             }
         }
         .btn_contact {
@@ -242,12 +381,13 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 15px 0;
-                border-radius: 10px;
-                width: 70%;
+                padding: 15px 70px;
+                border-radius: 25px;
+                width: fit-content;
                 font-family: 'Roboto', sans-serif;
                 background-color: #303030;
                 position: relative;
+
                 a {
                     text-decoration: none;
                     color: #f0f0f0;
@@ -257,7 +397,7 @@ body {
                     font-size: 17px;
                     margin-left: 10px;
                     color: #eeeeee;
-                    margin-top: 2px;
+                    margin-top: 0px;
                     -webkit-animation:linear infinite alternate;
                     -webkit-animation-name: run;
                     -webkit-animation-duration: 2s;
