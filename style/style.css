@@ -330,6 +330,11 @@ body {
 .section_drop_services.active {
   transform: translateY(-23%);
 }
+@media (min-width: 1440px) {
+  .section_drop_services.active {
+    transform: translateY(-28%);
+  }
+}
 .section_drop_services .close_menu_desktop {
   position: absolute;
   top: 20px;
@@ -355,15 +360,37 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+@media (min-width: 1440px) {
+  .section_drop_services .little_explain_drop_services {
+    width: 60%;
+    margin-top: 3rem;
+  }
+}
 .section_drop_services .inside_drop_services {
-  width: 85%;
-  margin: 2rem auto;
-  display: flex;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .section_drop_services .inside_drop_services {
+    width: 85%;
+    margin: 2rem auto;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .section_drop_services .inside_drop_services {
+    width: 70%;
+  }
 }
 .section_drop_services .inside_drop_services .each_services_menu {
   width: 22%;
   padding: 15px;
   margin-right: 15px;
+  cursor: pointer;
+}
+.section_drop_services .inside_drop_services .each_services_menu:hover {
+  background-color: #ee475817;
+  border-radius: 10px;
+  transition: ease-in 0.1s;
 }
 .section_drop_services .inside_drop_services .each_services_menu a {
   text-decoration: none;
@@ -398,6 +425,8 @@ body {
   padding-right: 5px;
   padding-bottom: 4px;
   border-bottom: solid 1px #363636;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .section_all .section_presentation {
@@ -540,6 +569,50 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 50px;
+}
+.section_all .section_test_potentiel {
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+  margin-top: 8.5rem;
+  padding: 2.5rem 1rem;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.section_all .section_test_potentiel .title_potentiel {
+  margin: 2rem 0;
+  font-size: 32px;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.section_all .section_test_potentiel .subtitle_potentiel {
+  font-size: 15px;
+  color: whitesmoke;
+  margin: 1rem auto;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 80%;
+}
+.section_all .section_test_potentiel .btn_potentiel {
+  text-align: center;
+  margin-top: 3rem;
+}
+.section_all .section_test_potentiel .btn_potentiel button {
+  width: fit-content;
+  padding: 10px 7px;
+  border: none;
+  border-bottom: solid 1px whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.8px;
+  font-size: 18px;
+}
+.section_all .section_all_services {
+  height: 300px;
+  background-color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */
