@@ -564,11 +564,19 @@ body {
   height: 300px;
   width: 100%;
   border-radius: 10px;
-  background-color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1235&q=80");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 50px;
+}
+@media (min-width: 1440px) {
+  .section_all .section_presentation .img_presentation {
+    height: 500px;
+  }
 }
 .section_all .section_test_potentiel {
   background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
@@ -576,6 +584,20 @@ body {
   padding: 2.5rem 1rem;
   background-repeat: no-repeat;
   object-fit: cover;
+  background-position: bottom;
+}
+@media (min-width: 1024px) {
+  .section_all .section_test_potentiel {
+    width: 90%;
+    margin: 8.5rem auto 2rem;
+    border-radius: 10px;
+    padding: 2.5rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .section_all .section_test_potentiel {
+    width: 63%;
+  }
 }
 .section_all .section_test_potentiel .title_potentiel {
   margin: 2rem 0;
@@ -611,8 +633,75 @@ body {
   font-size: 18px;
 }
 .section_all .section_all_services {
-  height: 300px;
+  padding: 8.5rem 0;
   background-color: whitesmoke;
+}
+.section_all .section_all_services .inside_width_all_services {
+  width: 90%;
+  margin: 0 auto;
+}
+.section_all .section_all_services .inside_width_all_services .principal_title_all_services {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services {
+  margin: 3.5rem 0;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .block_img.__imgVitrine {
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 10px;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more {
+  margin: 2rem 0;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .title_more p {
+  font-size: 1.375em;
+  font-weight: 600;
+  background: linear-gradient(85deg, #d64c7f, #ee4758 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more p {
+  margin: 0;
+  line-height: 1.5;
+  color: #1f1f1f;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more .kpi_explain {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more .kpi_explain p {
+  margin: 4px 0;
+  margin-right: 15px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #ee4758;
+  border-radius: 5px;
+  border: solid 0.5px rgba(254, 148, 215, 0.3);
+  background-color: rgba(254, 148, 215, 0.05);
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .see_pricing {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #818181;
+  font-size: 14px;
+  width: fit-content;
+  border: none;
+  border-bottom: solid 1px #818181;
+  padding-bottom: 3px;
+}
+.section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .see_pricing i {
+  font-size: 12px;
+  margin-left: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
