@@ -3,9 +3,9 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  background: linear-gradient(85deg, #d64c7f, #ee4758 50%);
+  background: linear-gradient(85deg, #4c4ed6, #364cc7 50%);
 }
 
 .dark_mode_menu_active {
@@ -72,11 +72,13 @@ body {
 }
 
 .menu_mobile {
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  height: auto;
   position: fixed;
   z-index: 999;
-  transform: translateX(-105%);
+  transform: translateX(-110%);
   opacity: 0.8;
   transition: ease-in-out 0.45s;
   display: flex;
@@ -85,25 +87,33 @@ body {
   transform: translateX(0);
   opacity: 1;
   transition: ease-in-out 0.45s;
+  box-shadow: 0 2px 10px #292929;
+  background-color: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .menu_mobile .services_menu_mobile {
   width: 83%;
   background-color: whitesmoke;
   height: 100%;
   overflow-y: auto;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .menu_mobile .services_menu_mobile .bloc_all_services {
   padding: 10px;
 }
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu {
   width: 90%;
-  margin: 15px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
-  border-bottom: solid 1px #cecece;
+  padding: 0;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu {
@@ -132,11 +142,12 @@ body {
   font-weight: 300;
   font-size: 13px;
   margin-left: 0;
-  padding: 10px 0;
+  padding: 0;
+  width: 85%;
 }
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a i {
-  font-size: 27px;
-  color: #ee4758;
+  font-size: 16px;
+  color: #2daf4d;
 }
 .menu_mobile .services_menu_mobile .block_others {
   margin-left: 24px;
@@ -161,15 +172,15 @@ body {
   margin-top: 20px;
 }
 .menu_mobile .services_menu_mobile .bloc_contactUs button {
-  border: solid 1px #ee4758;
+  border: solid 1px #202947;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 8px 17px;
   border-radius: 25px;
-  width: 70%;
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(85deg, #d64c7f, #ee4758 50%);
+  width: fit-content;
+  font-family: "Raleway", sans-serif;
+  background: #202947;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -180,17 +191,13 @@ body {
 .menu_mobile .services_menu_mobile .bloc_contactUs button a {
   text-decoration: none;
   color: whitesmoke;
-  font-weight: 600;
+  font-weight: 700;
 }
 .menu_mobile .services_menu_mobile .bloc_contactUs button i {
-  font-size: 17px;
+  font-size: 11px;
   margin-left: 10px;
-  color: #303030;
+  color: whitesmoke;
   margin-top: 1px;
-  -webkit-animation: linear infinite alternate;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 2s;
-  position: absolute;
 }
 @-webkit-keyframes run {
   0% {
@@ -204,7 +211,8 @@ body {
   }
 }
 .menu_mobile .services_menu_mobile .bloc_socialMedia {
-  margin-top: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 100%;
   text-align: center;
 }
@@ -215,10 +223,12 @@ body {
 }
 .menu_mobile .close_menu_mobile {
   width: 17%;
-  background-color: #717171cc;
+  background-color: #353535e6;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .menu_mobile .close_menu_mobile i {
   color: whitesmoke;
@@ -247,7 +257,7 @@ body {
 @media (min-width: 1440px) {
   .section_header {
     margin: 20px auto;
-    width: 63%;
+    width: 85%;
   }
 }
 .section_header .menu_desktop {
@@ -264,24 +274,26 @@ body {
 }
 .section_header .menu_desktop .all_links .services {
   font-size: 15px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2px;
   margin-right: 35px;
   font-weight: normal;
   cursor: pointer;
+  font-weight: 600;
 }
 .section_header .menu_desktop .all_links .services:hover {
-  color: #353535;
+  color: rgba(255, 255, 255, 0.5);
 }
 .section_header .menu_desktop .all_links a {
   text-decoration: none;
   font-size: 15px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.4px;
   color: whitesmoke;
   margin-right: 35px;
   font-weight: normal;
+  font-weight: 600;
 }
 .section_header .menu_desktop .all_links a:hover {
-  color: #353535;
+  color: rgba(255, 255, 255, 0.5);
 }
 .section_header .btn_contact_desktop {
   display: none;
@@ -293,25 +305,24 @@ body {
   }
 }
 .section_header .btn_contact_desktop button {
-  border: solid 1px #303030;
+  border: solid 1px #30303000;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  background-color: #303030;
+  padding: 8px 15px;
+  font-family: "Raleway", sans-serif;
+  background-color: #ffffff41;
   position: relative;
   cursor: pointer;
 }
 .section_header .btn_contact_desktop button:hover {
-  background-color: whitesmoke;
-  border-color: whitesmoke;
-  box-shadow: 0 2px 6px rgba(85, 85, 85, 0.466);
-  transition: ease-in 0.1s;
+  background-color: rgba(245, 245, 245, 0.342);
+  border-color: rgba(245, 245, 245, 0);
+  transition: ease 0.15s;
 }
 .section_header .btn_contact_desktop button:hover a {
-  color: #ee4758;
+  color: #ffffff;
 }
 .section_header .btn_contact_desktop button a {
   text-decoration: none;
@@ -353,9 +364,9 @@ body {
 .section_drop_services .title_grey_menu {
   text-align: center;
   color: #c5c5c5;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
 }
 .section_drop_services .little_explain_drop_services {
   width: 70%;
@@ -363,10 +374,12 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 500;
+  color: #747474;
 }
 @media (min-width: 1440px) {
   .section_drop_services .little_explain_drop_services {
-    width: 60%;
+    width: 50%;
     margin-top: 3rem;
   }
 }
@@ -382,7 +395,7 @@ body {
 }
 @media (min-width: 1440px) {
   .section_drop_services .inside_drop_services {
-    width: 70%;
+    width: 60%;
   }
 }
 .section_drop_services .inside_drop_services .each_services_menu {
@@ -403,6 +416,8 @@ body {
 .section_drop_services .inside_drop_services .each_services_menu a .title_each_services {
   display: flex;
   align-items: center;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
 }
 .section_drop_services .inside_drop_services .each_services_menu a .title_each_services i {
   color: #ee4758;
@@ -415,8 +430,8 @@ body {
 }
 .section_drop_services .inside_drop_services .each_services_menu a .explain_each_services {
   font-size: 14px;
-  font-weight: 300;
-  color: #3f3f3f;
+  font-weight: 500;
+  color: #747474;
 }
 .section_drop_services .inside_drop_services .each_services_menu a .explain_each_services p {
   height: 70px;
@@ -430,7 +445,7 @@ body {
   padding-bottom: 4px;
   border-bottom: solid 1px #363636;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .section_all .section_presentation {
@@ -472,12 +487,12 @@ body {
 }
 @media (min-width: 1440px) {
   .section_all .section_presentation .title_fadeup p {
-    font-size: 60px;
+    font-size: 70px;
   }
 }
 .section_all .section_presentation .explanation_agency h1 {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -491,7 +506,7 @@ body {
 @media (min-width: 1024px) {
   .section_all .section_presentation .explanation_agency h1 {
     width: 70%;
-    margin: 20px auto;
+    margin: 50px auto;
   }
 }
 .section_all .section_presentation .explanation_agency h3 {
@@ -510,58 +525,113 @@ body {
 .section_all .section_presentation .btn_contact {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.section_all .section_presentation .btn_contact button {
+@media (min-width: 768px) {
+  .section_all .section_presentation .btn_contact {
+    flex-direction: row;
+  }
+}
+.section_all .section_presentation .btn_contact .take_contact {
   cursor: pointer;
-  border: solid 1px #303030;
+  border: solid 1px #202947;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 70px;
+  padding: 9px 16px 9px 16px;
   border-radius: 25px;
   width: fit-content;
-  font-family: "Roboto", sans-serif;
-  background-color: #303030;
-  position: relative;
+  font-family: "Raleway", sans-serif;
+  background-color: #202947;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
-.section_all .section_presentation .btn_contact button a {
+@media (min-width: 768px) {
+  .section_all .section_presentation .btn_contact .take_contact {
+    margin-bottom: 0;
+    padding: 9px 17px 9px 17px;
+  }
+}
+.section_all .section_presentation .btn_contact .take_contact a {
   text-decoration: none;
   color: #f0f0f0;
-  font-weight: 600;
+  font-weight: 700;
 }
-.section_all .section_presentation .btn_contact button i {
-  font-size: 17px;
+.section_all .section_presentation .btn_contact .take_contact i {
+  font-size: 11px;
   margin-left: 10px;
   color: #eeeeee;
-  margin-top: 0px;
-  -webkit-animation: linear infinite alternate;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 2s;
-  position: absolute;
+  margin-top: 1px;
 }
 @-webkit-keyframes run {
   0% {
-    left: 72%;
+    left: 88%;
   }
   50% {
-    left: 74%;
+    left: 86%;
   }
   100% {
-    left: 72%;
+    left: 88%;
   }
 }
-.section_all .section_presentation .btn_contact button:hover {
-  background-color: whitesmoke;
-  border-color: whitesmoke;
-  box-shadow: 0 2px 6px rgba(85, 85, 85, 0.466);
-  transition: ease-in 0.2s;
+.section_all .section_presentation .btn_contact .take_contact:hover {
+  background-color: rgba(245, 245, 245, 0.253);
+  border-color: rgba(245, 245, 245, 0);
+  transition: ease 0.15s;
 }
-.section_all .section_presentation .btn_contact button:hover a {
-  color: #ee4758;
+.section_all .section_presentation .btn_contact .take_contact:hover a {
+  color: whitesmoke;
 }
-.section_all .section_presentation .btn_contact button:hover i {
-  color: #303030;
+.section_all .section_presentation .btn_contact .take_contact:hover i {
+  color: whitesmoke;
+}
+.section_all .section_presentation .btn_contact .see_tarifs {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.2px;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  .section_all .section_presentation .btn_contact .see_tarifs {
+    margin-left: 20px;
+  }
+}
+.section_all .section_presentation .btn_contact .see_tarifs a {
+  text-decoration: none;
+  color: #202947;
+  font-weight: 700;
+}
+.section_all .section_presentation .btn_contact .see_tarifs i {
+  font-size: 11px;
+  margin-left: 10px;
+  color: #202947;
+  margin-top: 1px;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 88%;
+  }
+  50% {
+    left: 86%;
+  }
+  100% {
+    left: 88%;
+  }
+}
+.section_all .section_presentation .btn_contact .see_tarifs:hover {
+  transition: ease 0.15s;
+}
+.section_all .section_presentation .btn_contact .see_tarifs:hover a {
+  color: #dfdfdf;
+}
+.section_all .section_presentation .btn_contact .see_tarifs:hover i {
+  color: #dfdfdf;
 }
 .section_all .section_presentation .img_presentation {
   margin-top: 2.5rem;
@@ -625,6 +695,7 @@ body {
   margin-top: 3rem;
 }
 .section_all .section_test_potentiel .btn_potentiel button {
+  cursor: pointer;
   width: fit-content;
   padding: 10px 7px;
   border: none;
@@ -632,7 +703,7 @@ body {
   background-color: transparent;
   color: whitesmoke;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 1.8px;
   font-size: 18px;
 }
