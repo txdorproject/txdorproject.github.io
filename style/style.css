@@ -257,7 +257,7 @@ body {
 @media (min-width: 1440px) {
   .section_header {
     margin: 20px auto;
-    width: 85%;
+    width: 75%;
   }
 }
 .section_header .menu_desktop {
@@ -405,7 +405,7 @@ body {
   cursor: pointer;
 }
 .section_drop_services .inside_drop_services .each_services_menu:hover {
-  background-color: #ee475817;
+  background-color: #47eec417;
   border-radius: 10px;
   transition: ease-in 0.1s;
 }
@@ -416,11 +416,10 @@ body {
 .section_drop_services .inside_drop_services .each_services_menu a .title_each_services {
   display: flex;
   align-items: center;
-  font-family: "Source Serif Pro", serif;
   font-weight: 600;
 }
 .section_drop_services .inside_drop_services .each_services_menu a .title_each_services i {
-  color: #ee4758;
+  color: #2daf4d;
   margin-right: 10px;
   font-size: 20px;
 }
@@ -539,7 +538,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 16px 9px 16px;
+  padding: 9px 12px 9px 12px;
   border-radius: 25px;
   width: fit-content;
   font-family: "Raleway", sans-serif;
@@ -604,13 +603,13 @@ body {
 }
 .section_all .section_presentation .btn_contact .see_tarifs a {
   text-decoration: none;
-  color: #202947;
+  color: whitesmoke;
   font-weight: 700;
 }
 .section_all .section_presentation .btn_contact .see_tarifs i {
   font-size: 11px;
   margin-left: 10px;
-  color: #202947;
+  color: whitesmoke;
   margin-top: 1px;
 }
 @-webkit-keyframes run {
@@ -628,10 +627,10 @@ body {
   transition: ease 0.15s;
 }
 .section_all .section_presentation .btn_contact .see_tarifs:hover a {
-  color: #dfdfdf;
+  color: rgba(255, 255, 255, 0.5);
 }
 .section_all .section_presentation .btn_contact .see_tarifs:hover i {
-  color: #dfdfdf;
+  color: rgba(255, 255, 255, 0.5);
 }
 .section_all .section_presentation .img_presentation {
   margin-top: 2.5rem;
@@ -658,7 +657,7 @@ body {
   padding: 2.5rem 1rem;
   background-repeat: no-repeat;
   object-fit: cover;
-  background-position: bottom;
+  background-position: unset;
 }
 @media (min-width: 1024px) {
   .section_all .section_test_potentiel {
@@ -708,7 +707,7 @@ body {
   font-size: 18px;
 }
 .section_all .section_all_services {
-  padding: 8.5rem 0;
+  padding: 8.5rem 0 3.5rem;
   background-color: whitesmoke;
 }
 .section_all .section_all_services .inside_width_all_services {
@@ -716,7 +715,7 @@ body {
   margin: 0 auto;
 }
 .section_all .section_all_services .inside_width_all_services .principal_title_all_services {
-  text-align: center;
+  text-align: initial;
   font-size: 32px;
   font-weight: bold;
   color: #1f1f1f;
@@ -824,16 +823,28 @@ body {
   }
 }
 .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .title_more p {
-  font-size: 1.375em;
+  font-size: 24px;
   font-weight: 600;
-  background: linear-gradient(85deg, #d64c7f, #ee4758 50%);
+  background: #202947;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 1440px) {
+  .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .title_more p {
+    font-size: 26px;
+  }
+}
 .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more p {
   margin: 0;
-  line-height: 1.5;
-  color: #1f1f1f;
+  line-height: 1.8;
+  color: #575757;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media (min-width: 1440px) {
+  .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more p {
+    font-size: 16px;
+  }
 }
 .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .explain_more .kpi_explain {
   display: flex;
@@ -847,10 +858,10 @@ body {
   padding: 4px 10px;
   font-size: 13px;
   font-weight: 300;
-  color: #ee4758;
+  color: #126827;
   border-radius: 5px;
-  border: solid 0.5px rgba(254, 148, 215, 0.3);
-  background-color: rgba(254, 148, 215, 0.05);
+  border: solid 0.5px #2daf4d62;
+  background-color: #2daf4d10;
 }
 .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .see_pricing {
   margin-top: 20px;
@@ -860,12 +871,41 @@ body {
   font-size: 14px;
   width: fit-content;
   border: none;
-  border-bottom: solid 1px #818181;
-  padding-bottom: 3px;
 }
 .section_all .section_all_services .inside_width_all_services .block_list_of_services .each_block_services .bloc_explain_more .see_pricing i {
   font-size: 12px;
   margin-left: 7px;
+}
+.section_all .section_choice_pricing {
+  padding: 8.5rem 0 8.5rem;
+  position: relative;
+  z-index: 2;
+}
+.section_all .section_choice_pricing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(85deg, #4c4ed6, #364cc7 50%);
+  z-index: -1;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-10deg);
+}
+.section_all .section_choice_pricing .section_all_choice_pricing {
+  width: 90%;
+  margin: 0 auto;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .title {
+  text-align: initial;
+  font-size: 32px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.section_all .section_all_clients {
+  height: 200px;
+  background-color: whitesmoke;
+  margin-top: -4.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
