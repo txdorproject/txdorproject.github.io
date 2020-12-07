@@ -223,7 +223,7 @@ body {
 }
 .menu_mobile .close_menu_mobile {
   width: 17%;
-  background-color: #353535e6;
+  background-color: #171717e6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,6 +266,7 @@ body {
 @media (min-width: 1024px) {
   .section_header .menu_desktop {
     display: flex;
+    margin-top: 4px;
   }
 }
 .section_header .menu_desktop .all_links {
@@ -460,7 +461,7 @@ body {
 @media (min-width: 1440px) {
   .section_all .section_presentation {
     width: 63%;
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
 }
 .section_all .section_presentation .title_fadeup {
@@ -478,10 +479,12 @@ body {
   font-size: 32px;
   font-weight: bold;
   color: whitesmoke;
+  letter-spacing: -2px;
 }
 @media (min-width: 768px) {
   .section_all .section_presentation .title_fadeup p {
     font-size: 45px;
+    margin: 0px 10px 0px 0;
   }
 }
 @media (min-width: 1440px) {
@@ -538,7 +541,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 12px 9px 12px;
+  padding: 12px;
   border-radius: 25px;
   width: fit-content;
   font-family: "Raleway", sans-serif;
@@ -549,7 +552,7 @@ body {
 @media (min-width: 768px) {
   .section_all .section_presentation .btn_contact .take_contact {
     margin-bottom: 0;
-    padding: 9px 17px 9px 17px;
+    padding: 12px 17px 12px 17px;
   }
 }
 .section_all .section_presentation .btn_contact .take_contact a {
@@ -605,6 +608,23 @@ body {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 700;
+  position: relative;
+}
+.section_all .section_presentation .btn_contact .see_tarifs a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -9px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section_all .section_presentation .btn_contact .see_tarifs a:hover::after {
+  width: 100%;
+  left: 0;
 }
 .section_all .section_presentation .btn_contact .see_tarifs i {
   font-size: 11px;
@@ -623,15 +643,6 @@ body {
     left: 88%;
   }
 }
-.section_all .section_presentation .btn_contact .see_tarifs:hover {
-  transition: ease 0.15s;
-}
-.section_all .section_presentation .btn_contact .see_tarifs:hover a {
-  color: rgba(255, 255, 255, 0.5);
-}
-.section_all .section_presentation .btn_contact .see_tarifs:hover i {
-  color: rgba(255, 255, 255, 0.5);
-}
 .section_all .section_presentation .img_presentation {
   margin-top: 2.5rem;
   height: 300px;
@@ -649,6 +660,7 @@ body {
 @media (min-width: 1440px) {
   .section_all .section_presentation .img_presentation {
     height: 500px;
+    margin-top: 6rem;
   }
 }
 .section_all .section_test_potentiel {
@@ -678,7 +690,7 @@ body {
   color: whitesmoke;
   text-align: center;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
 }
 .section_all .section_test_potentiel .subtitle_potentiel {
   font-size: 15px;
@@ -704,7 +716,8 @@ body {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   letter-spacing: 1.8px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .section_all .section_all_services {
   padding: 8.5rem 0 3.5rem;
@@ -877,7 +890,7 @@ body {
   margin-left: 7px;
 }
 .section_all .section_choice_pricing {
-  padding: 8.5rem 0 8.5rem;
+  padding: 6.5rem 0 8.5rem;
   position: relative;
   z-index: 2;
 }
@@ -901,6 +914,124 @@ body {
   font-size: 32px;
   font-weight: bold;
   color: whitesmoke;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .subtitle {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #f8f8f8;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .subtitle .important_informations {
+  font-weight: bold;
+  color: #15161b;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing {
+  display: flex;
+  flex-direction: column;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing {
+  margin: 2rem 0;
+  padding: 2.5rem 0;
+  background-color: #171f3b;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .popular {
+  background-color: #46ce6a;
+  font-size: 15px;
+  width: 200px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -10px;
+  font-weight: 800;
+  left: -50px;
+  position: relative;
+  box-shadow: 0 2px 3px #353535;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing p {
+  margin: 0;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .name_of_pack {
+  text-align: center;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .name_of_pack .name {
+  font-size: 28px;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .name_of_pack .precision_subtitle_pack {
+  width: 80%;
+  margin: 0 auto;
+  color: whitesmoke;
+  font-size: 14px;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .name_of_pack .price_of_pack {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+  width: 100%;
+  justify-content: center;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .name_of_pack .price_of_pack span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack {
+  width: 80%;
+  margin: 0 auto;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .title_feature {
+  font-size: 18px;
+  color: whitesmoke;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 17px 0;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .title_feature i {
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .explain_features {
+  margin: 10px 0 20px 0;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .explain_features p {
+  font-size: 15px;
+  color: whitesmoke;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .btn_contact_pack {
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .btn_contact_pack button {
+  cursor: pointer;
+  border: solid 1px whitesmoke;
+  padding: 12px 17px;
+  border-radius: 25px;
+  width: fit-content;
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+  letter-spacing: 1px;
+  color: #202947;
+  font-weight: 600;
 }
 .section_all .section_all_clients {
   height: 200px;
