@@ -758,8 +758,32 @@ body {
         }
     }
 
+    .section_our_clients {
+        padding: 6.5rem 0;
+        background-color: whitesmoke;
+
+        .title {
+            text-align: initial;
+            font-size: 32px;
+            font-weight: bold;
+            color: #1f1f1f;
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #1f1f1f;
+            text-align: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+    }
+
     .section_all_services {
-        padding: 8.5rem 0 3.5rem;
+        padding: 8.5rem 0 8.5rem;
         background-color: whitesmoke;
 
         .inside_width_all_services {
@@ -771,6 +795,11 @@ body {
                 font-size: 32px;
                 font-weight: bold;
                 color: rgb(31, 31, 31);
+
+                @media(min-width:1024px) {
+                    text-align: center;
+                }
+
             }
     
             .block_list_of_services {
@@ -956,6 +985,14 @@ body {
             top: 0;
             transform-origin: left top;
             transform: skewY(-10deg);
+
+            @media(min-width: 768px) {
+                transform: skewY(-5deg);
+            }
+
+            @media(min-width: 1440px) {
+                height: 105%;
+            }
         }
 
         .section_all_choice_pricing {
@@ -967,6 +1004,10 @@ body {
                 font-size: 32px;
                 font-weight: bold;
                 color: whitesmoke;
+
+                @media(min-width:1024px) {
+                    text-align: center;
+                }
             }
 
             .subtitle {
@@ -976,6 +1017,15 @@ body {
                 margin-top: 30px;
                 margin-bottom: 30px;
                 color: #f8f8f8;
+
+                @media(min-width:1024px) {
+                    text-align: center;
+                }
+
+                @media(min-width:1440px) {
+                    width: 70%;
+                    margin: 60px auto;
+                }
 
                 .important_informations {
                     font-weight: bold;
@@ -987,6 +1037,12 @@ body {
                 display: flex;
                 flex-direction: column;
 
+                @media(min-width:768px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+
                 .each_pricing {
                     margin: 2rem 0;
                     padding: 2.5rem 0;
@@ -994,6 +1050,15 @@ body {
                     border-radius: 10px;
                     position: relative;
                     overflow: hidden;
+                    width: 100%;
+
+                    @media(min-width:768px) {
+                        width: 48%;
+                    }
+
+                    @media(min-width:1440px) {
+                        width: 24%;
+                    }
 
                     .popular {
                         background-color: #46ce6a;
@@ -1007,11 +1072,16 @@ body {
                         -webkit-transform: rotate(-45deg);
                         -ms-transform: rotate(-45deg);
                         transform: rotate(-45deg);
-                        top: -10px;
+                        top: 32px;
                         font-weight: 800;
                         left: -50px;
-                        position: relative;
+                        position: absolute;
                         box-shadow: 0 2px 3px #353535;
+
+                        @media(min-width:1440px) {
+                            top: 23px;
+                            left: -56px;
+                        }
                     }
 
                     p {
@@ -1058,8 +1128,28 @@ body {
                         width: 80%;
                         margin: 0 auto; 
 
+                        @media(min-width:768px) {
+                            height: 800px;
+                        }
+
+                        @media(min-width:1440px) {
+                            height: 850px;
+                        }
+
+                        @media(min-width:1800px) {
+                            height: 770px;
+                        }
+
+                        .start_Of {
+                            width: 100%;
+                            font-size: 14px;
+                            font-style: italic;
+                            color: whitesmoke;
+                            margin-bottom: 2rem;
+                        }
+
                         .title_feature {
-                            font-size: 18px;
+                            font-size: 16px;
                             color: whitesmoke;
                             font-weight: 500;
                             display: flex;
@@ -1076,7 +1166,7 @@ body {
                         .explain_features {
                             margin: 10px 0 20px 0;
                             p {
-                                font-size: 15px;
+                                font-size: 14px;
                                 color: whitesmoke;
                             }
                         }

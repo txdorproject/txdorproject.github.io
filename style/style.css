@@ -719,8 +719,29 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+.section_all .section_our_clients {
+  padding: 6.5rem 0;
+  background-color: whitesmoke;
+}
+.section_all .section_our_clients .title {
+  text-align: initial;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f1f1f;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.section_all .section_our_clients .subtitle {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1f1f1f;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+}
 .section_all .section_all_services {
-  padding: 8.5rem 0 3.5rem;
+  padding: 8.5rem 0 8.5rem;
   background-color: whitesmoke;
 }
 .section_all .section_all_services .inside_width_all_services {
@@ -732,6 +753,11 @@ body {
   font-size: 32px;
   font-weight: bold;
   color: #1f1f1f;
+}
+@media (min-width: 1024px) {
+  .section_all .section_all_services .inside_width_all_services .principal_title_all_services {
+    text-align: center;
+  }
 }
 .section_all .section_all_services .inside_width_all_services .block_list_of_services {
   margin: 3.5rem 0;
@@ -905,6 +931,16 @@ body {
   transform-origin: left top;
   transform: skewY(-10deg);
 }
+@media (min-width: 768px) {
+  .section_all .section_choice_pricing::before {
+    transform: skewY(-5deg);
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_choice_pricing::before {
+    height: 105%;
+  }
+}
 .section_all .section_choice_pricing .section_all_choice_pricing {
   width: 90%;
   margin: 0 auto;
@@ -915,6 +951,11 @@ body {
   font-weight: bold;
   color: whitesmoke;
 }
+@media (min-width: 1024px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .title {
+    text-align: center;
+  }
+}
 .section_all .section_choice_pricing .section_all_choice_pricing .subtitle {
   font-size: 17px;
   font-weight: 500;
@@ -922,6 +963,17 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   color: #f8f8f8;
+}
+@media (min-width: 1024px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .subtitle {
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .subtitle {
+    width: 70%;
+    margin: 60px auto;
+  }
 }
 .section_all .section_choice_pricing .section_all_choice_pricing .subtitle .important_informations {
   font-weight: bold;
@@ -931,6 +983,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing {
   margin: 2rem 0;
   padding: 2.5rem 0;
@@ -938,6 +997,17 @@ body {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing {
+    width: 48%;
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing {
+    width: 24%;
+  }
 }
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .popular {
   background-color: #46ce6a;
@@ -951,11 +1021,17 @@ body {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: -10px;
+  top: 32px;
   font-weight: 800;
   left: -50px;
-  position: relative;
+  position: absolute;
   box-shadow: 0 2px 3px #353535;
+}
+@media (min-width: 1440px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .popular {
+    top: 23px;
+    left: -56px;
+  }
 }
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing p {
   margin: 0;
@@ -996,8 +1072,30 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack {
+    height: 800px;
+  }
+}
+@media (min-width: 1440px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack {
+    height: 850px;
+  }
+}
+@media (min-width: 1800px) {
+  .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack {
+    height: 770px;
+  }
+}
+.section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .start_Of {
+  width: 100%;
+  font-size: 14px;
+  font-style: italic;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .title_feature {
-  font-size: 18px;
+  font-size: 16px;
   color: whitesmoke;
   font-weight: 500;
   display: flex;
@@ -1013,7 +1111,7 @@ body {
   margin: 10px 0 20px 0;
 }
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .all_features_inside_pack .explain_features p {
-  font-size: 15px;
+  font-size: 14px;
   color: whitesmoke;
 }
 .section_all .section_choice_pricing .section_all_choice_pricing .block_for_each_pricing .each_pricing .btn_contact_pack {
