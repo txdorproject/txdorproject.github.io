@@ -182,16 +182,14 @@ body {
   font-family: "Raleway", sans-serif;
   background: #202947;
   position: relative;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .menu_mobile .services_menu_mobile .bloc_contactUs button {
     width: 35%;
   }
-}
-.menu_mobile .services_menu_mobile .bloc_contactUs button a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-weight: 700;
 }
 .menu_mobile .services_menu_mobile .bloc_contactUs button i {
   font-size: 11px;
@@ -1411,6 +1409,130 @@ body {
   color: whitesmoke;
   padding: 10px;
   font-size: 30px;
+}
+
+.section_contact_mobile {
+  position: fixed;
+  transform: translateY(-105%);
+  background-color: #fafafa;
+  z-index: 999999999;
+  opacity: 0;
+  transition: ease-in 0.4s;
+}
+@media (min-width: 375px) {
+  .section_contact_mobile {
+    padding-bottom: 3rem;
+  }
+}
+.section_contact_mobile.open {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: ease-in 0.4s;
+}
+.section_contact_mobile .close_menu_mobile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.section_contact_mobile .close_menu_mobile i {
+  font-weight: 300;
+  font-size: 30px;
+}
+.section_contact_mobile .title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 28px;
+  padding: 2rem 0;
+}
+.section_contact_mobile .explain {
+  text-align: center;
+  margin: 1rem auto 3.5rem;
+  width: 80%;
+  font-size: 14px;
+}
+.section_contact_mobile .formulaire_contact {
+  width: 80%;
+  margin: 0 auto;
+}
+.section_contact_mobile .formulaire_contact .form_control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section_contact_mobile .formulaire_contact .form_control.success input {
+  border-bottom-color: #2ecc71;
+}
+.section_contact_mobile .formulaire_contact .form_control.success .fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.section_contact_mobile .formulaire_contact .form_control.success small {
+  visibility: visible;
+}
+.section_contact_mobile .formulaire_contact .form_control.error input {
+  border-bottom-color: #e74c3c;
+}
+.section_contact_mobile .formulaire_contact .form_control.error .fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.section_contact_mobile .formulaire_contact .form_control.error small {
+  visibility: visible;
+}
+.section_contact_mobile .formulaire_contact .form_control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.section_contact_mobile .formulaire_contact .form_control input {
+  border: none;
+  border-bottom: solid 1px #cacaca;
+  padding: 8px;
+  width: 95%;
+}
+.section_contact_mobile .formulaire_contact .form_control input:focus {
+  outline: 0;
+}
+.section_contact_mobile .formulaire_contact .form_control i {
+  visibility: hidden;
+  position: absolute;
+  top: 6px;
+  right: 4px;
+}
+.section_contact_mobile .formulaire_contact .form_control select {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #cacaca;
+}
+.section_contact_mobile .formulaire_contact .form_control textarea {
+  width: 93%;
+  height: 200px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  border: solid 1px #cacaca;
+}
+.section_contact_mobile .formulaire_contact .btn_contact_mobile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section_contact_mobile .formulaire_contact .btn_contact_mobile button {
+  margin-top: 1rem;
+  border: none;
+  background: #2051b9;
+  width: fit-content;
+  padding: 15px 75px;
+  color: whitesmoke;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section_contact_mobile .formulaire_contact .btn_contact_mobile button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

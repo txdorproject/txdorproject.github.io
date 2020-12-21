@@ -13,6 +13,54 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="section_contact_mobile" id="section_contact_mobile">
+        <div class="close_menu_mobile">
+            <i class="fas fa-times" id="closeMenuContact"></i>
+        </div>
+        <div class="title">
+            Discutons de votre projet
+        </div>
+        <div class="explain">
+            We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!
+        </div>
+        <div class="formulaire_contact">
+            <form action="POST" id="form">
+                <div class="form_control">
+                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form_control">
+                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form_control">
+                    <select name="" id="" id="selectContactForm">
+                        <option value="">Choisissez votre forfait</option>
+                        <option value="starterC" name="starterContactOption">Starter pack</option>
+                        <option value="proC" name="proContactOption">Pro pack</option>
+                        <option value="businessC" name="businessContactOption">Business pack</option>
+                        <option value="personnaliseC" name="personnaliseContactOption">Personnalisé</option>
+                    </select>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form_control">
+                    <textarea name="" id="" placeholder="Votre message *" id="messageContactForm"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="btn_contact_mobile">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="dark_mode_menu_active" id="dark_mode_menu_active"></div>
     <div class="scrollToTop" id="scrollToTop" onclick="topFunction()"><i class="fas fa-chevron-up"></i></div>
     <div class="section_hamburger" id="section_hamburger">
@@ -64,7 +112,7 @@
                 <a href="">Nos clients</a>
             </div>
             <div class="bloc_contactUs">
-                <button><a href="">Prendre contact</a><i class="fas fa-chevron-right"></i></button>
+                <button id="contactUsMobile">Prendre contact<i class="fas fa-chevron-right"></i></button>
             </div>
             <div class="bloc_socialMedia">
                 <a href=""><i class="fab fa-facebook-square"></i></a>
@@ -77,7 +125,7 @@
         </div>
     </div>
     <div class="section_header" id="section_header">
-        HuntWeb
+        Urplace
         <div class="menu_desktop">
             <div class="all_links">
                 <div class="services" id="services">
@@ -589,14 +637,14 @@
 
     <div class="section_footer">
         <div class="logo_footer">
-            HuntWeb
+            Urplace
         </div>
         <div class="subtitle_footer">
             Choose to differ yourselves to your concurrent
         </div>
         <div class="langueAndCopyright">
             <span><i class="fas fa-comment"></i>France (Francais)</span>
-            <span>© HuntWeb 2021</span>
+            <span>© Urplace 2021</span>
         </div>
         <div class="btn_contact_footer">
             <button>Intéréssez par une collaboration<i class="fas fa-chevron-right"></i></button>
@@ -637,7 +685,7 @@
                     <i class="fas fa-phone-alt"></i>0681779617
                 </div>
                 <div class="title">
-                    <i class="fas fa-at"></i>contact@huntweb.fr
+                    <i class="fas fa-at"></i>contact@Urplace.fr
                 </div>
             </div>
         </div>

@@ -14,6 +14,94 @@ closeMenu.addEventListener('click', () => {
   menu_mobile.classList.remove('active')
 })
 
+/**
+ * Popup contact
+ */
+
+const closeMenuContact = document.getElementById('closeMenuContact')
+const contactUsMobile = document.getElementById('contactUsMobile')
+const section_contact_mobile = document.getElementById('section_contact_mobile')
+
+contactUsMobile.addEventListener('click', () => {
+  section_contact_mobile.classList.add('open')
+  menu_mobile.classList.remove('active')
+})
+
+closeMenuContact.addEventListener('click', () => {
+  section_contact_mobile.classList.remove('open')
+})
+
+
+/**
+ * Form validation
+ */
+
+const form = document.getElementById('form');
+const nameContactForm = document.getElementById('nameContactForm');
+const emailContactForm = document.getElementById('emailContactForm');
+const selectContactForm = document.getElementById('selectContactForm');
+const messageContactForm = document.getElementById('messageContactForm');
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	checkInputs();
+});
+
+function checkInputs() {
+	// trim to remove the whitespaces
+	const nameValue = nameContactForm.value.trim();
+	const emailValue = emailContactForm.value.trim();
+	//const selectValue = selectContactForm.value.trim();
+	//const messageValue = messageContactForm.value.trim();
+	
+	if(nameValue === '') {
+		setErrorFor(nameContactForm, 'Username cannot be blank');
+	} else {
+		setSuccessFor(nameContactForm);
+	}
+	
+	if(emailValue === '') {
+		setErrorFor(emailContactForm, 'Email cannot be blank');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(emailContactForm, 'Not a valid email');
+	} else {
+		setSuccessFor(emailContactForm);
+	}
+  
+  /*
+	if(selectValue === '') {
+		setErrorFor(selectContactForm, 'Password cannot be blank');
+	} else {
+		setSuccessFor(selectContactForm);
+  }
+  */
+
+  /*
+	if(messageValue === '') {
+		setErrorFor(messageContactForm, 'Password2 cannot be blank');
+	} else{
+		setSuccessFor(messageContactForm);
+  }
+  */
+}
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form_control error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form_control success';
+}
+	
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+
 
 /**
  * Dropdown menu services
@@ -64,13 +152,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-/**
- * Form validation
- */
-
-
 
 
 /**
