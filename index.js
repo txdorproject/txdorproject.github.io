@@ -8,10 +8,12 @@ const closeMenu = document.getElementById('closeMenu')
 
 section_hamburger.addEventListener('click', () => {
   menu_mobile.classList.add('active')
+  document.body.style.overflow = "hidden";
 })
 
 closeMenu.addEventListener('click', () => {
   menu_mobile.classList.remove('active')
+  document.body.style.overflow = "auto";
 })
 
 /**
@@ -25,10 +27,12 @@ const section_contact_mobile = document.getElementById('section_contact_mobile')
 contactUsMobile.addEventListener('click', () => {
   section_contact_mobile.classList.add('open')
   menu_mobile.classList.remove('active')
+  document.body.style.overflow = "hidden";
 })
 
 closeMenuContact.addEventListener('click', () => {
   section_contact_mobile.classList.remove('open')
+  document.body.style.overflow = "auto";
 })
 
 
@@ -51,8 +55,8 @@ function checkInputs() {
 	// trim to remove the whitespaces
 	const nameValue = nameContactForm.value.trim();
 	const emailValue = emailContactForm.value.trim();
-	//const selectValue = selectContactForm.value.trim();
-	//const messageValue = messageContactForm.value.trim();
+	const selectValue = selectContactForm.value;
+	const messageValue = messageContactForm.value.trim();
 	
 	if(nameValue === '') {
 		setErrorFor(nameContactForm, 'Username cannot be blank');
@@ -68,21 +72,21 @@ function checkInputs() {
 		setSuccessFor(emailContactForm);
 	}
   
-  /*
+  
 	if(selectValue === '') {
 		setErrorFor(selectContactForm, 'Password cannot be blank');
 	} else {
 		setSuccessFor(selectContactForm);
   }
-  */
+  
 
-  /*
+  
 	if(messageValue === '') {
 		setErrorFor(messageContactForm, 'Password2 cannot be blank');
 	} else{
 		setSuccessFor(messageContactForm);
   }
-  */
+
 }
 
 function setErrorFor(input, message) {
