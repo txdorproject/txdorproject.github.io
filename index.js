@@ -16,24 +16,48 @@ closeMenu.addEventListener('click', () => {
   document.body.style.overflow = "auto";
 })
 
+
 /**
  * Popup contact
  */
 
+
 const closeMenuContact = document.getElementById('closeMenuContact')
+const closeMenuContactDesktop = document.getElementById('closeMenuContactDesktop')
 const contactUsMobile = document.getElementById('contactUsMobile')
 const section_contact_mobile = document.getElementById('section_contact_mobile')
+const section_contact_desktop = document.getElementById('section_contact_desktop')
 
 contactUsMobile.addEventListener('click', () => {
   section_contact_mobile.classList.add('open')
   menu_mobile.classList.remove('active')
+  dark_mode_menu_active.classList.add('active');
   document.body.style.overflow = "hidden";
 })
 
 closeMenuContact.addEventListener('click', () => {
   section_contact_mobile.classList.remove('open')
+  dark_mode_menu_active.classList.remove('active');
   document.body.style.overflow = "auto";
 })
+
+// Et mode desktop
+
+const contactEventDesktop = document.getElementsByClassName("contactEventDesktop")
+Array.from(contactEventDesktop).forEach(function(element) {
+      element.addEventListener('click', () => {
+		  section_contact_desktop.classList.add('open')
+		  dark_mode_menu_active.classList.add('active');
+		document.body.style.overflow = "hidden";
+	  });
+	});
+
+closeMenuContactDesktop.addEventListener('click', () => {
+	section_contact_desktop.classList.remove('open')
+	dark_mode_menu_active.classList.remove('active');
+	document.body.style.overflow = "auto";
+	})
+
 
 
 /**
@@ -52,7 +76,6 @@ form.addEventListener('submit', e => {
 });
 
 function checkInputs() {
-	// trim to remove the whitespaces
 	const nameValue = nameContactForm.value.trim();
 	const emailValue = emailContactForm.value.trim();
 	const selectValue = selectContactForm.value;
@@ -79,7 +102,6 @@ function checkInputs() {
 		setSuccessFor(selectContactForm);
   }
   
-
   
 	if(messageValue === '') {
 		setErrorFor(messageContactForm, 'Password2 cannot be blank');

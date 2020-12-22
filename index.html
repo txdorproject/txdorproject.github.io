@@ -60,6 +60,53 @@
             </form>
         </div>
     </div>
+    <div class="section_contact_desktop" id="section_contact_desktop">
+        <div class="close_menu_mobile">
+            <i class="fas fa-times" id="closeMenuContactDesktop"></i>
+        </div>
+        <div class="title">
+            Discutons de votre projet
+        </div>
+        <div class="explain">
+            We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!
+        </div>
+        <div class="formulaire_contact">
+            <form action="POST" id="form">
+                <div class="form_control">
+                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <select name="" id="selectContactForm">
+                        <option value="starterC" name="starterContactOption">Starter pack</option>
+                        <option value="proC" name="proContactOption">Pro pack</option>
+                        <option value="businessC" name="businessContactOption">Business pack</option>
+                        <option value="personnaliseC" name="personnaliseContactOption">Personnalisé</option>
+                    </select>
+                    <i class="fas fa-check-circle icon_select"></i>
+                    <i class="fas fa-exclamation-circle icon_select"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <textarea name="" placeholder="Votre message *" id="messageContactForm"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="btn_contact_mobile">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="dark_mode_menu_active" id="dark_mode_menu_active"></div>
     <div class="scrollToTop" id="scrollToTop" onclick="topFunction()"><i class="fas fa-chevron-up"></i></div>
     <div class="section_hamburger" id="section_hamburger">
@@ -136,7 +183,7 @@
             </div>
         </div>
         <div class="btn_contact_desktop">
-            <button><a href="">Contactez-nous</a></button>
+            <button class="contactEventDesktop">Contactez-nous</button>
         </div>
     </div>
     <div class="section_drop_services" id="section_drop_services">
@@ -212,7 +259,7 @@
                 <h3></h3>
             </div>
             <div class="btn_contact" data-aos="fade-up" data-aos-duration="1400">
-                <button class="take_contact"><a href="">Prendre contact pour plus d'informations</a><i class="fas fa-chevron-right"></i></button>
+                <button class="take_contact contactEventDesktop">Prendre contact pour plus d'informations<i class="fas fa-chevron-right"></i></button>
                 <button class="see_tarifs"><a href="">Voir nos différents tarifs</a><i class="fas fa-chevron-right"></i></button>
             </div>
             <div class="img_presentation" data-aos="fade-up" data-aos-duration="1400">
@@ -646,11 +693,11 @@
             <span>© Urplace 2021</span>
         </div>
         <div class="btn_contact_footer">
-            <button>Intéréssez par une collaboration<i class="fas fa-chevron-right"></i></button>
+            <button class="contactEventDesktop">Intéréssez par une collaboration<i class="fas fa-chevron-right"></i></button>
         </div>
         <div class="all_links_footer">
             <div class="block_list">
-                <div class="title">
+                <div class="title cursorNoneTitle">
                     Nos services
                 </div>
                 <div class="list_of">
@@ -680,10 +727,10 @@
                 </div>
             </div>
             <div class="block_list">
-                <div class="title">
+                <div class="title cursorNoneTitle">
                     <i class="fas fa-phone-alt"></i>0681779617
                 </div>
-                <div class="title">
+                <div class="title cursorNoneTitle">
                     <i class="fas fa-at"></i>contact@Urplace.fr
                 </div>
             </div>
