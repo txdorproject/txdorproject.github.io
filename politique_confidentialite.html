@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="section_contact_mobile" id="section_contact_mobile">
+        <div class="close_menu_mobile">
+            <i class="fas fa-times" id="closeMenuContact"></i>
+        </div>
+        <div class="title">
+            Discutons de votre projet
+        </div>
+        <div class="explain">
+            We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!
+        </div>
+        <div class="formulaire_contact">
+            <form action="POST" id="form">
+                <div class="form_control">
+                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <select name="" id="selectContactForm">
+                        <option value="starterC" name="starterContactOption">Starter pack</option>
+                        <option value="proC" name="proContactOption">Pro pack</option>
+                        <option value="businessC" name="businessContactOption">Business pack</option>
+                        <option value="personnaliseC" name="personnaliseContactOption">Personnalisé</option>
+                    </select>
+                    <i class="fas fa-check-circle icon_select"></i>
+                    <i class="fas fa-exclamation-circle icon_select"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <textarea name="" placeholder="Votre message *" id="messageContactForm"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="btn_contact_mobile">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="section_contact_desktop" id="section_contact_desktop">
+        <div class="close_menu_mobile">
+            <i class="fas fa-times" id="closeMenuContactDesktop"></i>
+        </div>
+        <div class="title">
+            Discutons de votre projet
+        </div>
+        <div class="explain">
+            We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!
+        </div>
+        <div class="formulaire_contact">
+            <form action="POST" id="form">
+                <div class="form_control">
+                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <select name="" id="selectContactForm">
+                        <option value="starterC" name="starterContactOption">Starter pack</option>
+                        <option value="proC" name="proContactOption">Pro pack</option>
+                        <option value="businessC" name="businessContactOption">Business pack</option>
+                        <option value="personnaliseC" name="personnaliseContactOption">Personnalisé</option>
+                    </select>
+                    <i class="fas fa-check-circle icon_select"></i>
+                    <i class="fas fa-exclamation-circle icon_select"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <textarea name="" placeholder="Votre message *" id="messageContactForm"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="btn_contact_mobile">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="dark_mode_menu_active" id="dark_mode_menu_active"></div>
+    <div class="scrollToTop" id="scrollToTop" onclick="topFunction()"><i class="fas fa-chevron-up"></i></div>
+    <div class="section_hamburger" id="section_hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu_mobile" id="menu_mobile">
+        <div class="services_menu_mobile">
+            <div class="bloc_all_services">
+                <div class="each_services_mobile_menu">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-code-branch"></i>
+                            <p>Site vitrine</p>
+                        </div>
+                        <p class="sub_explain">Créer votre site vitrine sur-mesure pour marquer votre place sur internet.</p>
+                    </a>
+                </div>
+                <div class="each_services_mobile_menu">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Site E-commerce</p>
+                        </div>
+                        <p class="sub_explain">Créer votre propre place de marché et faites augmenter vos ventes.</p>
+                    </a>
+                </div>
+                <div class="each_services_mobile_menu">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-drafting-compass"></i>
+                            <p>Identité visuelle</p>
+                        </div>
+                        <p class="sub_explain">Créer votre idendité visuelle sur-mesure pour que vos clients reconnaissent votre style.</p>
+                    </a>
+                </div>
+                <div class="each_services_mobile_menu">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-people-carry"></i>
+                            <p>Accompagnement</p>
+                        </div>
+                        <p class="sub_explain">Nous vous accompagement dans la création et la mise en place de tous les services.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="block_others">
+                <a href="">Nos forfaits</a>
+                <a href="">L'agence</a>
+                <a href="">Nos clients</a>
+            </div>
+            <div class="bloc_contactUs">
+                <button id="contactUsMobile">Prendre contact<i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="bloc_socialMedia">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <div class="close_menu_mobile">
+            <i class="fas fa-times" id="closeMenu"></i>
+        </div>
+    </div>
+    <div class="section_header" id="section_header">
+        Urplace
+        <div class="menu_desktop">
+            <div class="all_links">
+                <div class="services" id="services">
+                    Nos services <i class="fas fa-caret-down"></i>
+                </div>
+                <a href="">Nos forfaits</a>
+                <a href="">L'agence</a>
+                <a href="">Nos clients</a>
+            </div>
+        </div>
+        <div class="btn_contact_desktop">
+            <button class="contactEventDesktop">Contactez-nous</button>
+        </div>
+    </div>
+    <div class="section_drop_services" id="section_drop_services">
+        <div class="close_menu_desktop" id="close_menu_desktop">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="little_explain_drop_services">
+            Nous vous proposons 4 types de services différents pour accroitre votre croissance numérique. Les services peuvent être utilisés de façon indépendante ou de façon groupé. Nous vous aidons également à faire votre choix selon vos besoins. 
+        </div>
+        <div class="title_grey_menu">
+            NOS SERVICES
+        </div>
+        <div class="inside_drop_services">
+            <div class="each_services_menu">
+                <a href="">
+                    <div class="title_each_services">
+                        <i class="fas fa-code-branch"></i>
+                        <p>Site vitrine</p>
+                    </div>
+                    <div class="explain_each_services">
+                        <p>Créer votre site vitrine sur-mesure pour marquer votre place sur internet.</p>
+                    </div>
+                    <button>En savoir plus</button>
+                </a>
+            </div>
+            <div class="each_services_menu">
+                <a href="">
+                    <div class="title_each_services">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Site E-commerce</p>
+                    </div>
+                    <div class="explain_each_services">
+                        <p>Créer votre propre place de marché et faites augmenter vos ventes.</p>
+                    </div>
+                    <button>En savoir plus</button>
+                </a>
+            </div>
+            <div class="each_services_menu">
+                <a href="">
+                    <div class="title_each_services">
+                        <i class="fas fa-drafting-compass"></i>
+                        <p>Identité visuelle</p>
+                    </div>
+                    <div class="explain_each_services">
+                        <p>Créer votre idendité visuelle sur-mesure pour que vos clients reconnaissent votre style.</p>
+                    </div>
+                    <button>En savoir plus</button>
+                </a>
+            </div>
+            <div class="each_services_menu">
+                <a href="">
+                    <div class="title_each_services">
+                        <i class="fas fa-people-carry"></i>
+                        <p>Accompagnement</p>
+                    </div>
+                    <div class="explain_each_services">
+                        <p>Nous vous accompagement dans la création et la mise en place de tous les services.</p>
+                    </div>
+                    <button>En savoir plus</button>
+                </a>
+            </div>
+        </div> 
+    </div>
+    <div class="return_home">
+        <button><a href="index.html">Page d'accueil</a></button>
+    </div>
+    <div class="section_mentions_legales">
+        <h1>Nos mentions légales</h1>
+    </div>
+    <div class="section_footer">
+        <div class="logo_footer">
+            Urplace
+        </div>
+        <div class="subtitle_footer">
+            Choose to differ yourselves to your concurrent
+        </div>
+        <div class="langueAndCopyright">
+            <span><i class="fas fa-comment"></i>France (Francais)</span>
+            <span>© Urplace 2021</span>
+        </div>
+        <div class="btn_contact_footer">
+            <button class="contactEventDesktop">Intéréssez par une collaboration<i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="all_links_footer">
+            <div class="block_list">
+                <div class="title cursorNoneTitle">
+                    Nos services
+                </div>
+                <div class="list_of">
+                    <a href="">Site vitrine</a>
+                    <a href="">Site E-commerce</a>
+                    <a href="">identité visuelle</a>
+                    <a href="">Accompagnement</a>
+                </div>
+            </div>
+            <div class="block_list">
+                <div class="title">
+                    Nos forfaits
+                </div>
+                <div class="title">
+                    L'agence
+                </div>
+                <div class="title">
+                    Nos clients
+                </div>
+            </div>
+            <div class="block_list">
+                <div class="title">
+                    <a href="mentions_legales.html">Mentions légales</a> 
+                </div>
+                <div class="title">
+                    <a href="politique_confidentialite.html">Politique de confidentialité</a> 
+                </div>
+            </div>
+            <div class="block_list">
+                <div class="title cursorNoneTitle">
+                    <i class="fas fa-phone-alt"></i>0681779617
+                </div>
+                <div class="title cursorNoneTitle">
+                    <i class="fas fa-at"></i>contact@Urplace.fr
+                </div>
+            </div>
+        </div>
+        <div class="all_rights">
+            Tous droits réservés. Toutes les marques commerciales et marques déposées sont la propriété de leurs propriétaires respectifs.
+        </div>
+        <div class="bloc_socialMedia">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </div>
+    <script src="politique.js"></script>
+</body>
+</html>

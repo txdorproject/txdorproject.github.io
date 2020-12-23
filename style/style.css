@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -703,6 +704,41 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+.section_all .modal_test_potentiel {
+  display: block;
+  position: absolute;
+  width: 375px;
+  margin: 0 auto;
+  opacity: 0;
+}
+.section_all .modal_test_potentiel.open {
+  opacity: 1;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 10%;
+}
+.section_all .modal_test_potentiel .close_menu_mobile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+}
+.section_all .modal_test_potentiel .bloc_all_potentiel {
+  overflow: hidden;
+  height: 230px;
+  width: 375px;
+}
+.section_all .modal_test_potentiel .bloc_all_potentiel .container_bloc_potentiel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+.section_all .modal_test_potentiel .bloc_all_potentiel .container_bloc_potentiel .each_bloc_potentiel {
+  min-height: 230px;
+  text-align: center;
+  min-width: 375px;
+  object-fit: cover;
+}
 .section_all .section_our_clients {
   padding: 6.5rem 0 1rem;
   background-color: whitesmoke;
@@ -1365,9 +1401,14 @@ body {
 }
 .section_footer .all_links_footer .block_list .title {
   margin-bottom: 20px;
+  cursor: pointer;
   color: whitesmoke;
   font-weight: 600;
-  cursor: pointer;
+}
+.section_footer .all_links_footer .block_list .title a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
 }
 .section_footer .all_links_footer .block_list .title.cursorNoneTitle {
   cursor: auto;
@@ -1720,6 +1761,53 @@ body {
 }
 .section_contact_desktop .formulaire_contact .btn_contact_mobile button:focus {
   outline: none;
+}
+
+/*******************************************************************/
+/* Page : Mentions légales */
+/*******************************************************************/
+.return_home {
+  width: 100%;
+  text-align: center;
+}
+.return_home button {
+  margin-top: 1rem;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.return_home button a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.section_mentions_legales {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+.section_mentions_legales h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: whitesmoke;
+  letter-spacing: -2px;
+}
+
+/*******************************************************************/
+/* Page : Mentions légales */
+/*******************************************************************/
+.section_politique_confidentialite {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+.section_politique_confidentialite h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: whitesmoke;
+  letter-spacing: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -740,6 +740,47 @@ body {
         }
     }
 
+    .modal_test_potentiel {
+        display: block;
+        position: absolute;
+        width: 375px;
+        margin: 0 auto;
+        opacity: 0;
+
+        &.open {
+            opacity: 1;
+            background-color: whitesmoke;
+            position: fixed;
+            top: 10%;
+        }
+
+        .close_menu_mobile {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 99;
+        }
+
+        .bloc_all_potentiel {
+            overflow: hidden;
+            height: 230px;
+            width: 375px;
+
+            .container_bloc_potentiel {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                transform: translateX(0);
+
+                .each_bloc_potentiel {
+                    min-height: 230px;
+                    text-align: center;
+                    min-width: 375px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
     .section_our_clients {
         padding: 6.5rem 0 1rem;
         background-color: whitesmoke;
@@ -1432,10 +1473,15 @@ body {
 
         .block_list {
             .title {
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-weight: 600;
+                }
                 margin-bottom: 20px;
+                cursor: pointer;
                 color: whitesmoke;
                 font-weight: 600;
-                cursor: pointer;
 
                 &.cursorNoneTitle{
                     cursor: auto;
@@ -1838,5 +1884,59 @@ body {
                 }
             }
         }
+    }
+}
+
+
+/*******************************************************************/
+/* Page : Mentions légales */
+/*******************************************************************/
+
+
+.return_home {
+    width: 100%;
+    text-align: center;
+
+    button {
+        margin-top: 1rem;
+        border: none;
+        padding: 10px 45px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        a {
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.section_mentions_legales {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: whitesmoke;
+        letter-spacing: -2px;
+    }
+}
+
+
+/*******************************************************************/
+/* Page : Mentions légales */
+/*******************************************************************/
+
+
+.section_politique_confidentialite {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: whitesmoke;
+        letter-spacing: -2px;
     }
 }

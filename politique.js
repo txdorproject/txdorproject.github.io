@@ -181,51 +181,6 @@ function topFunction() {
 
 
 /**
- * Modal potentiel
- */
-
-var btn_potentiel =  document.getElementById('btn_potentiel')
-var container_bloc_potentiel = document.getElementById("container_bloc_potentiel");
-var nextQuestion = document.getElementsByClassName("nextQuestion");
-var img = document.querySelectorAll("#container_bloc_potentiel div");
-var resultatRecherche = document.getElementById('resultatRecherche');
-var modal_test_potentiel = document.getElementById('modal_test_potentiel');
-var closeModalPotentiel = document.getElementById('closeModalPotentiel');
-
-btn_potentiel.addEventListener('click', () => {
-	modal_test_potentiel.classList.add('open')
-})
-
-closeModalPotentiel.addEventListener('click', () => {
-	modal_test_potentiel.classList.remove('open')
-	console.log("lol");
-})
-
-let index = 0;
-
-function next() {
-    var randomNum = Math.floor(Math.random() * 45000) + 10000;
-    resultatRecherche.innerText = randomNum;
-    Array.prototype.forEach.call(nextQuestion, function(el) {
-        el.addEventListener('click', () => {
-            index++;
-            container_bloc_potentiel.style.transform = `translateX(${-index * 375}px)`;
-        })
-    });
-}
-
-next()
-
-
-/**
  * Scroll to section
- */
-
-
-
-
-/**
- * Potentiel entreprise
- * [] bar de progression
  */
 

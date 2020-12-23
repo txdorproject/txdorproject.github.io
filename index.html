@@ -273,8 +273,119 @@
             <div class="subtitle_potentiel">
                 90% des clients sont influencés par la publicité online. Voila pourquoi nous vous accompagnons dans la création et la résussite de votre place sur internet.
             </div>
-            <div class="btn_potentiel">
+            <div class="btn_potentiel" id="btn_potentiel">
                 <button>Démarrez le test</button>
+            </div>
+        </div>
+
+        <div class="modal_test_potentiel" id="modal_test_potentiel">
+            <div class="close_menu_mobile">
+                <i class="fas fa-times" id="closeModalPotentiel"></i>
+            </div>
+            <div class="bloc_all_potentiel">
+                <div class="container_bloc_potentiel" id="container_bloc_potentiel">
+                    <div class="each_bloc_potentiel">
+                        <p>Quel est votre secteur d'activité ?</p>
+                        <ul>
+                            <li><input type="radio"> Santé</li>
+                            <li><input type="radio"> Profession juridique</li>
+                            <li><input type="radio"> Habitat</li>
+                            <li><input type="radio"> Commercants et services</li>
+                        </ul>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Quel est votre métier ?</p>
+                        <select name="" id="">
+                            <option value="">Coiffeur</option>
+                            <option value="">Garagiste</option>
+                            <option value="">Menuisier</option>
+                            <option value="">Peintre</option>
+                            <option value="">Electricien</option>
+                            <option value="">Chauffagiste</option>
+                            <option value="">Décorateur (intérieur ou extérieur)</option>
+                            <option value="">Avocat</option>
+                            <option value="">Comptable</option>
+                            <option value="">Huissier</option>
+                            <option value="">Kinésithérapeute</option>
+                            <option value="">Dentiste</option>
+                            <option value="">Nutritioniste</option>
+                            <option value="">Vétérinaire</option>
+                            <option value="">Infirmier</option>
+                            <option value="">Psycologue</option>
+                            <option value="">Agence immobilière</option>
+                            <option value="">Auto école</option>
+                            <option value="">Animalerie</option>
+                            <option value="">Bars et/ou restaurant</option>
+                            <option value="">Bijoux</option>
+                            <option value="">Boulangerie</option>
+                            <option value="">Fleuriste</option>
+                            <option value="">Hotel</option>
+                            <option value="">Institut de beauté</option>
+                            <option value="">Magasin de vetement</option>
+                            <option value="">Opticien</option>
+                            <option value="">Sport</option>
+                            <option value="">Toilettage</option>
+                            <option value="">Meuble</option>
+                            <option value="">Traiteur</option>
+                            <option value="">Services et aides à domicile</option>
+                            <option value="">Société de sécurité</option>
+                            <option value="">Ventes automobiles</option>
+                        </select>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Quels sont vos clients ?</p>
+                        <ul>
+                            <li><input type="radio"> Des entreprises</li>
+                            <li><input type="radio"> Des particuliers</li>
+                            <li><input type="radio"> Des entreprises et des particuliers</li>
+                        </ul>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Votre entreprise est localisée à / proche de (rayon de 30km) ?</p>
+                        <select name="" id="">
+                            <option value="">Lille</option>
+                            <option value="">Valenciennes</option>
+                            <option value="">Lyon</option>
+                            <option value="">Bordeaux</option>
+                            <option value="">Paris</option>
+                            <option value="">Marseille</option>
+                            <option value="">Nice</option>
+                            <option value="">Nantes</option>
+                            <option value="">Dunkerque</option>
+                            <option value="">Lens</option>
+                            <option value="">Arras</option>
+                            <option value="">Lorient</option>
+                            <option value="">Toulouse</option>
+                            <option value="">Caen</option>
+                            <option value="">Rouen</option>
+                            <option value="">Nîmes</option>
+                        </select>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Avez-vous une présence numérique ?</p>
+                        <ul>
+                            <li><input type="radio"> Oui</li>
+                            <li><input type="radio"> Non</li>
+                        </ul>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Etes-vous présent sur les réseaux sociaux ?</p>
+                        <ul>
+                            <li><input type="radio"> Oui</li>
+                            <li><input type="radio"> Non</li>
+                        </ul>
+                        <button class="nextQuestion">Valider</button>
+                    </div>
+                    <div class="each_bloc_potentiel">
+                        <p>Sur les 30 derniers jours, les internautes ont fait environ <span id="resultatRecherche"></span> recherches liées à votre activité dans le secteur géographique que vous avez indiqué.</p>
+                        <button class="take_contact_for_more">Nous contacter</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -720,10 +831,10 @@
             </div>
             <div class="block_list">
                 <div class="title">
-                    Mentions légales
+                    <a href="mentions_legales.html">Mentions légales</a> 
                 </div>
                 <div class="title">
-                    Politique de confidentialité
+                    <a href="politique_confidentialite.html">Politique de confidentialité</a> 
                 </div>
             </div>
             <div class="block_list">
@@ -749,5 +860,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="index.js"></script>
 </body>
 </html>
