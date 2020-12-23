@@ -184,6 +184,7 @@ function topFunction() {
  * Modal potentiel
  */
 
+ /*
 var btn_potentiel =  document.getElementById('btn_potentiel')
 var container_bloc_potentiel = document.getElementById("container_bloc_potentiel");
 var nextQuestion = document.getElementsByClassName("nextQuestion");
@@ -216,6 +217,7 @@ function next() {
 
 next()
 
+*/
 
 /**
  * Scroll to section
