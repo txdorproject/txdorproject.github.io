@@ -16,6 +16,8 @@ closeMenu.addEventListener('click', () => {
   document.body.style.overflow = "auto";
 })
 
+console.log('lol');
+
 
 /**
  * Popup contact
