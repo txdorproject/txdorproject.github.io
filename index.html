@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urplace</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="menu_mobile" id="menu_mobile">
+        <div class="services_menu_mobile">
+            <div class="bloc_all_services">
+                <div class="each_services_mobile_menu go_to_vitrine">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-code-branch"></i>
+                            <p>Site vitrine</p>
+                        </div>
+                        <p class="sub_explain">Créer votre site vitrine sur-mesure pour marquer votre place sur internet.</p>
+                    </a>
+                </div>
+                <div class="each_services_mobile_menu go_to_ecommerce">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Site E-commerce</p>
+                        </div>
+                        <p class="sub_explain">Créer votre propre place de marché et faites augmenter vos ventes.</p>
+                    </a>
+                </div>
+                <div class="each_services_mobile_menu go_to_identite">
+                    <a href="">
+                        <div class="icon_and_title">
+                            <i class="fas fa-drafting-compass"></i>
+                            <p>Identité visuelle</p>
+                        </div>
+                        <p class="sub_explain">Créer votre idendité visuelle sur-mesure pour que vos clients reconnaissent votre style.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="block_others">
+                <a href="">Nos services</a>
+                <a href="" class="go_to_forfaits">Nos forfaits</a>
+                <a href="" class="go_to_a_propros">A propos</a>
+            </div>
+            <div class="bloc_contactUs">
+                <button id="contactUsMobile">Prendre contact</button>
+            </div>
+            <div class="bloc_socialMedia">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <img class="close_menu_mobile" src="/images/close_menu.svg" alt="">
+        </div>
+    </div>
+    <div class="dark_mode_menu_active" id="dark_mode_menu_active"></div>
+    <div class="scrollToTop" id="scrollToTop" onclick="topFunction()"><i class="fas fa-chevron-up"></i></div>
+    <div class="social_media_link">
+        <div class="each_social fb"><i class="fab fa-facebook"></i></div>
+        <div class="each_social insta"><i class="fab fa-instagram"></i></div>
+        <div class="each_social twitter"><i class="fab fa-twitter"></i></div>
+    </div>
+    <div class="popup_contact_mobile" id="popup_contact_mobile">
+        <img class="close_popup_mobile" src="/images/close_menu.svg" alt="">
+        <div class="title">
+            Discutons de votre projet
+        </div>
+        <div class="explain">
+            Nous vous répondrons dans un délai d'un à deux jours par e-mail. N'oubliez pas non plus de vérifier vos spams au cas où!        
+        </div>
+        <div class="formulaire_contact">
+            <form action="POST" id="form">
+                <div class="form_control">
+                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <legend>Votre forfait</legend>
+                    <select name="forfaits" id="selectContactForm">
+                        <option value="proC" name="proContactOption">PROFESSIONNEL</option>
+                        <option value="businessC" name="businessContactOption">BUSINESS</option>
+                        <option value="personnaliseC" name="personnaliseContactOption">PERSONNALISE</option>
+                    </select>
+                    <i class="fas fa-check-circle icon_select"></i>
+                    <i class="fas fa-exclamation-circle icon_select"></i>
+                    <small></small>
+                </div>
+                <div class="form_control">
+                    <textarea name="message" placeholder="Votre message *" id="messageContactForm"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="btn_contact_mobile">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="section_top_presentation">
+        <div class="header">
+            <div class="inside_header">
+                <div class="name_company">Urplace</div>
+                <div class="link_header">
+                    <div class="each_link_header services_click_dropdown">
+                        <span>Nos services</span><img class="arrow_btn" src="/images/chevron_bottom.svg" alt="">
+                        <div class="hover_menu_tablet">
+                            <div class="chev_hover"></div>
+                            <div class="each_services_menu_tablet">
+                                <a href="" class="go_to_vitrine">
+                                    <div class="top_each_hover">
+                                        <div class="img_services"><i class="fas fa-code-branch"></i></div>
+                                        <div class="title_each_hover">Site vitrine</div>
+                                    </div>
+                                    <div class="bottom_each_hover">Créer votre site vitrine sur-mesure pour marquer votre place sur internet.</div>
+                                </a>
+                            </div>
+                            <div class="each_services_menu_tablet">
+                                <a href="" class="go_to_ecommerce">
+                                    <div class="top_each_hover">
+                                        <div class="img_services"><i class="fas fa-chart-line"></i></div>
+                                        <div class="title_each_hover">Site E-Commerce</div>
+                                    </div>
+                                    <div class="bottom_each_hover">Créer votre propre place de marché et faites augmenter vos ventes.</div>
+                                </a>
+                            </div>
+                            <div class="each_services_menu_tablet">
+                                <a href="" class="go_to_identite">
+                                    <div class="top_each_hover">
+                                        <div class="img_services"><i class="fas fa-drafting-compass"></i></div>
+                                        <div class="title_each_hover">Identité visuelle</div>
+                                    </div>
+                                    <div class="bottom_each_hover">Créer votre idendité visuelle sur-mesure pour que vos clients reconnaissent votre style.</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each_link_header go_to_forfaits"><a href="">Nos forfaits</a></div>
+                    <div class="each_link_header go_to_a_propros"><a href="">A propos</a></div>
+                </div>
+                <div class="contact_header">
+                    <button>Nous contacter <img class="arrow_btn header_btn" src="/images/arrow_white.svg" alt=""></button>
+                </div>
+                <div class="icon_menu"><img src="/images/hamburger_icon.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="explain">
+            <div class="title reveal-1">
+                <h1>Innovez. Créez de la valeur. Sécurisez votre futur.</h1>
+            </div>
+            <div class="subtitle reveal-2">
+                <h2>Développez votre identité visuelle sur mesure et créer votre place sur internet afin d'augmenter votre visibilité et vos ventes. Nous vous accompagnons dans la conception et la création de vos outils digitaux. <span>Urplace</span> l'agence web qui métamorphose votre communication</h2>
+            </div>
+            <div class="block_btn reveal-3">
+                <div class="contact_btn">
+                    Contactez notre équipe
+                    <img class="arrow_btn" src="/images/arrow_black.svg" alt="">
+                </div>
+                <div class="tarif_btn">
+                    Voir nos différents tarifs
+                    <img class="arrow_btn" src="/images/arrow_black.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_about_us">
+        <div class="top_blue"></div>
+        <div class="bottom_blue"></div>
+        <div class="block_all_about_us">
+            <div class="top_about_us">
+                <h3>Nous avons aidé de nombreux clients à améliorer leur business</h3>
+            </div>
+            <div class="bottom_about_us">
+                <div class="review_client">
+                    <div class="top_review">
+                        <div class="photo_client"><img src="/images/client_1.jpg" alt=""></div>
+                        <div class="name_client">Gaëtan Dubrulle</div>
+                    </div>
+                    <div class="bottom_review">
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nihil quae asperiores officiis, ut voluptatum, corrupti totam esse corporis voluptatem nam unde est distinctio voluptate quis. Aspernatur a eveniet rem."</p>
+                    </div>
+                </div>
+                <div class="review_client">
+                    <div class="top_review">
+                        <div class="photo_client"><img src="/images/client_2.jpg" alt=""></div>
+                        <div class="name_client">Jessica Vienne</div>
+                    </div>
+                    <div class="bottom_review">
+                        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nihil quae asperiores officiis, ut voluptatum, corrupti totam esse corporis voluptatem nam unde est distinctio voluptate quis. Aspernatur a eveniet rem."</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <div class="section_what_we_do">
+        <div class="block_each_wwd">
+            <div class="title">
+                <h3>Que faisons-nous ? </h3>
+            </div>
+            <div class="description">
+                <p>Nous créons ensemble votre identité visuelle et votre présence sur internet, qui va vous servir de moyen de communication principal. Nous vous accompagnons et vous impliquons dans tout le processus de création afin que vous soyez le plus satisfait possible du résultat final.</p>
+            </div>
+        </div>
+        <div class="block_each_wwd">
+            <div class="title">
+                <h3>Pour qui nous le faisons ? </h3>
+            </div>
+            <div class="description">
+                <p>Vous êtes nouveau sur le marché, vous avez besoin d'une communication efficace, vous souhaitez vous faire connaître et vous démarquer de vos proches concurrents ? Les types de services que nous proposons sont fait pour vous.</p>
+            </div>
+        </div>
+        <div class="block_each_wwd">
+            <div class="title">
+                <h3>Pourquoi le faire ? </h3>
+            </div>
+            <div class="description">
+                <p>Aujourd'hui toutes les entreprises se doivent d'avoir un site internet, cela devient un gage de professionnalisme et un moyen simple et efficace pour vos futurs clients de vous connaître. A l'ère du numérique, c'est devenu quelque chose de normal.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section_chiffres">
+        <div class="each_chiffres">
+            <div class="top_chiffres"><span>+</span> <span class="number_scroll" id="number-1" data-target="15"></span></div>
+            <div class="bottom_chiffres">Clients satisfaits</div>
+        </div>
+        <div class="each_chiffres">
+            <div class="top_chiffres"><span>+</span> <span class="number_scroll" id="number-2" data-target="22"></span></div>
+            <div class="bottom_chiffres">Projets aboutis</div>
+        </div>
+        <div class="each_chiffres">
+            <div class="top_chiffres"><span>+</span> <span class="number_scroll" id="number-3" data-target="40"></span></div>
+            <div class="bottom_chiffres">Réalisations graphiques</div>
+        </div>
+    </div>
+
+    <div class="section_services">
+        <div class="big_title_services">
+            <h3>Nos services</h3>
+            <div class="subtitle">Nous créons des sites web avec des fonctionnalités qui vous permettront de proposer à vos prospects des réponses concrètes à leurs recherches. Ainsi votre marque ou votre entreprise sera reconnue pour sa qualité.</div>
+        </div>
+        <div class="block_big_inside_services">
+            <div class="each_services big_block_vitrine">
+                <div class="block_img_service reveal-1"><img src="/images/testimage2.PNG" alt=""></div>
+                <div class="block_for_all_informations">
+                    <div class="title">
+                        <h2>Site vitrine</h2>
+                    </div>
+                    <div class="description">
+                        <p>Pourquoi un site vitrine ?
+                            <ul>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Présenter votre activité</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Présenter vos produits / services</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Prospecter de nouveaux clients</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Donner de la visibilité à votre activité</li>
+                            </ul>
+                        </p>
+                        <p>Il est important que votre site vitrine/ site institutionnel soit représentatif de votre entreprise et des valeurs qu’elle véhicule car cela peut-être un premier contact avec vos prospects. Le site vitrine a un rôle de transmetteur d’information, il faut donc réussir à percuter les visiteurs sur vos produits ou vos services afin qu’ils réalisent une action (cliquer sur un bouton, vous contacter…)</p>
+                        <br>
+                        <p>Notre rôle est de créer ou refondre votre site internet vitrine, un site qui vous ressemble. Les sites internet que nous développons sont totalement optimisés. Nous nous concentrons sur votre business afin que vous ayez un meilleur ROI. Nous créons et développons des sites internet qui s'adaptent automatiquement sur tous les supports</p>
+                    </div>
+                    <div class="list_of_tags">
+                        <div class="each_tags">Développement</div>
+                        <div class="each_tags">Intégration</div>
+                        <div class="each_tags">Référencement</div>
+                        <div class="each_tags">Serveur</div>
+                        <div class="each_tags">Examen & test</div>
+                        <div class="each_tags">SEO & SEA</div>
+                    </div>
+                    <div class="see_tarifs_service"><a href="">En savoir plus sur le forfait vitrine</a><span><img src="/images/arrow_see_tarifs.svg" alt=""></span></div>
+                </div>
+            </div>
+            <div class="each_services revert_service_flex big_block_ecommerce">
+                <div class="block_img_service reveal-1"><img src="/images/testimage.PNG" alt=""></div>
+                <div class="block_for_all_informations">
+                    <div class="title">
+                        <h2>Site E-Commerce</h2>
+                    </div>
+                    <div class="description">
+                        <p class="init_p">Pourquoi un site E-Commerce ?
+                            <ul>
+                                <li><span><img src="/images/checked.svg" alt="" class="only_mobile_icon"></span>Développer le chiffre d’affaires de votre société</li>
+                                <li><span><img src="/images/checked.svg" alt="" class="only_mobile_icon"></span>Vendre vos produits en ligne</li>
+                                <li><span><img src="/images/checked.svg" alt="" class="only_mobile_icon"></span>Donner de la visibilité à votre entreprise et à vos produits</li>
+                                <li><span><img src="/images/checked.svg" alt="" class="only_mobile_icon"></span>Bénéficier d’une boutique ouverte 24H/24, 7J/7</li>
+                            </ul>
+                        </p>
+                        <p>Vous avez pour projet de créer votre boutique en ligne ? Aujourd’hui, créer un site marchand efficace relève de compétences techniques et d’une réelle expertise digitale.</p>
+                        <br>
+                        <p>Experts aussi dans le domaine du e-commerce, nous créons votre boutique en ligne pour qu’elle soit parfaitement optimisée au référencement naturel et au parcours client. Nous trouverons ensemble l’équilibre à atteindre entre un bon référencement et un marketing idéal des pages afin d’augmenter votre taux de conversion. Notre équipe allie créativité et performance afin de faire de votre projet web un véritable outil commercial de conversions.</p>
+                    </div>
+                    <div class="list_of_tags">
+                        <div class="each_tags">CMS</div>
+                        <div class="each_tags">Indexation</div>
+                        <div class="each_tags">Transporteur</div>
+                        <div class="each_tags">Produits illimités</div>
+                        <div class="each_tags">Marketplace</div>
+                        <div class="each_tags">Base de données</div>
+                        <div class="each_tags">HTTPS & SSL</div>
+                    </div>
+                    <div class="see_tarifs_service"><a href="">En savoir plus sur le forfait E-commerce</a><span><img src="/images/arrow_see_tarifs.svg" alt=""></span></div>
+                </div>
+            </div>
+            <div class="each_services big_block_identite">
+                <div class="block_img_service reveal-1"><img src="/images/testimage3.PNG" alt=""></div>
+                <div class="block_for_all_informations">
+                    <div class="title">
+                        <h2>Identité visuelle</h2>
+                    </div>
+                    <div class="description">
+                        <p>Pourquoi une identité visuelle ?
+                            <ul>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Marquer les esprits</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Se démarquer</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Augmenter votre notoriété</li>
+                                <li><span><img src="/images/checked.svg" alt=""></span>Diffuser vos valeurs</li>
+                            </ul>
+                        </p>
+                        <p>Le succès d’un site internet dépend de sa fiabilité : un design négligé et une navigation peu ergonomique sont deux éléments qui donnent une mauvaise impression à vos visiteurs. Quand on sait qu’il faut en moyenne 10 secondes à un internaute pour savoir s’il va rester sur votre site ou non, le graphisme et l’ergonomie sont essentiels pour capter leur attention. Les couleurs utilisées, la qualité des écritures, la présentation du site… tout doit être choisi avec soin pour que les utilisateurs bénéficient de la meilleure expérience.</p>
+                    </div>
+                    <div class="list_of_tags">
+                        <div class="each_tags">UX/UI</div>
+                        <div class="each_tags">Ergonomie</div>
+                        <div class="each_tags">Engagement</div>
+                        <div class="each_tags">Diffusion</div>
+                        <div class="each_tags">Affinity Designer</div>
+                    </div>
+                    <div class="see_tarifs_service"><a href="">En savoir plus sur le service d'identité visuelle <span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_forfaits">
+        <div class="title">
+            <h3>Nos différents tarifs</h3>
+        </div>
+        <div class="subtitle">
+            Nous proposons plusieurs solutions à différents tarifs adaptés à tous types de projets selon vos envies et vos besoins.
+        </div>
+        <div class="connaitre_facturation">
+            Comment se passe la facturation ? <span><img src="/images/arrow_see_tarifs.svg" alt=""></span>
+        </div>
+        <div class="block_for_forfaits">
+            <div class="each_forfaits" data-forfait="professionel">
+                <div class="most_popular">La solution la plus populaire</div>
+                <div class="title_f">VITRINE PROFESSIONEL</div>
+                <div class="subtitle_f">La solution basique pour vous faire connaître au plus grand nombre.</div>
+                <div class="price_f">3799<span class="euro">€</span></div>
+                <div class="infos_price">Réglable en plusieurs mensualitées</div>
+                <div class="btn_choose_f"><button>Choisir ce forfait</button></div> 
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Création d'identité visuelle</h4>
+                    <ul>
+                        <li>2 (maquettes & logo & chartes graphiques)</li>
+                        <li>1 révision</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Site vitrine</h4>
+                    <ul>
+                        <li>One page</li>
+                        <li>Multi-page (8 pages maximum)</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Animations intégrés</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Formulaire de contact</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Full responsive</h4>
+                    <ul>
+                        <li>Adapté à tous les supports</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Mise en place d'une communication sur les réseaux sociaux</h4>
+                    <ul>
+                        <li>Facebook, Instagram, Twitter, etc...</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Nom de domaine & hébergement</h4>
+                    <ul>
+                        <li>Gratuit pendant 4 ans</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Accompagnement technique et organisationnel complet</h4>
+                    <ul>
+                        <li>Gratuit pendant 3 mois après la livraison du produit</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Référencement complet</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Maintenance corrective</h4>
+                    <ul>
+                        <li>Résolution de tous les bugs visuels et techniques dans les 3 jours ouvrés</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="each_forfaits " data-forfait="business">
+                <div class="title_f">E-COMMERCE BUSINESS</div>
+                <div class="subtitle_f">La solution vous permettant de vendre en ligne sans limite</div>
+                <div class="price_f">9499<span class="euro">€</span></div>
+                <div class="infos_price">Réglable en plusieurs mensualitées</div>
+                <div class="btn_choose_f"><button>Choisir ce forfait</button></div> 
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Création d'identité visuelle</h4>
+                    <ul>
+                        <li>2 (maquettes & logo & chartes graphiques)</li>
+                        <li>2 révision</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Site E-Commerce</h4>
+                    <ul>
+                        <li>Nombre de page illimités</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Nombre de produits illimités</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Animation intégrés</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Paiement avec Paypal et Visa</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Formulaire de contact</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Full responsive</h4>
+                    <ul>
+                        <li>Adapté à tous les supports</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Nom de domaine & hébergement</h4>
+                    <ul>
+                        <li>Gratuit pendant 4 ans</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Accompagnement technique et organisationnel complet</h4>
+                    <ul>
+                        <li>Gratuit pendant 3 mois après la livraison du produit</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Référencement complet</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Analyse de statistique de visite et d’achat</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Ads module : générer de l’argent grâce aux publicités ciblés</h4>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Liens direct avec les transporteur pour livraison</h4>
+                    <ul>
+                        <li>UPS, Amazon, etc...</li>
+                    </ul>
+                </div>
+                <div class="block_list_services_f">
+                    <div class="icone"><img src="/images/checked.svg" alt=""></div>
+                    <h4>Maintenance corrective</h4>
+                    <ul>
+                        <li>Résolution de tous les bugs visuels et techniques dans les 3 jours ouvrés</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="each_forfaits" data-forfait="personnalise">
+                <div class="title_f">SOLUTION PERSONNALISE</div>
+                <div class="subtitle_f">La solution sur mesure adapté à toutes vos demandes</div>
+                <div class="btn_choose_f"><button>Prendre contact</button></div> 
+                <div class="block_list_services_f list_perso_f">
+                    <h4>Pour toutes demandes particulière concernant le développement d'un site vitrine de plus de 8 pages, d'une mise en place d'une campagne de communication sur les réseaux sociaux, de produits ou de demandes sépcifiques pour un site E-commerce ou la création d'une identité visuelle comportant plusieurs maquettes, logos et retours, n'hésitez pas à nous contacter pour que nous échangions à ce sujet. </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_appel_contact">
+        <div class="block_appel_contact">
+            <div class="block_text">
+                <h3>Nouveau sur le marché et besoin de vos faire connaître ? Travaillons ensemble pour votre réussite.</h3>
+                <h4>N’hésitez pas à nous contacter pour nous parler de votre entreprise et de vos projets.</h4>
+            </div>
+            <div class="block_btn">
+                <button>Demander une collaboration</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_footer">
+        <div class="title">
+            Urplace
+        </div>
+        <div class="accroche">
+            <h3>Faite le choix de vous différencier de tous vos concurrents</h3>
+        </div>
+        <div class="block_for_links">
+            <div class="each_b_links">
+                <div class="title_ebl">
+                    Nos services
+                </div>
+                <div class="list_of_links">
+                    <a href="" class="go_to_vitrine">Site vitrine</a>
+                    <a href="" class="go_to_ecommerce">Site E-Commerce</a>
+                    <a href="" class="go_to_identite">Identité visuelle</a>
+                </div>
+            </div>
+            <div class="each_b_links">
+                <div class="title_ebl">
+                    Nos forfaits
+                </div>
+                <div class="list_of_links">
+                    <a href="" class="go_to_forfaits">Professionnel</a>
+                    <a href="" class="go_to_forfaits">Business</a>
+                    <a href="" class="go_to_forfaits">Personnalisé</a>
+                </div>
+            </div>
+            <div class="each_b_links">
+                <div class="title_ebl others_tebl">
+                    <a href="mentions.html">Mentions légales</a> 
+                </div>
+                <div class="title_ebl others_tebl">
+                    <a href="politique.html">Politiques de confidentialité</a>
+                </div>
+                <div class="title_ebl others_tebl">
+                    <a href="sitemap.html">Site Map</a> 
+                </div>
+            </div>
+            <div class="each_b_links">
+                <div class="title_ebl others_tebl">
+                    <i class="fas fa-phone-alt"></i>06 42 21 58 99
+                </div>
+                <div class="title_ebl others_tebl">
+                    <i class="fas fa-paper-plane"></i>contactus@urplace.fr
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <p>Tous droits réservés. Toutes les marques commerciales et marques déposées sont la propriété de leurs propriétaires respectifs.</p>
+        </div>
+        <div class="copyrights">Urplace Copyright © 2021</div>
+        <div class="list_media_footer">
+            <a href=""><i class="fab fa-facebook"></i></a> 
+            <a href=""><i class="fab fa-instagram"></i></a> 
+            <a href=""><i class="fab fa-twitter"></i></a> 
+        </div>
+        
+    </div>
+</body>
+</html>
