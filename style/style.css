@@ -1054,15 +1054,19 @@ p {
 }
 
 .section_chiffres {
-  max-width: 100%;
-  padding: 1rem 1.5rem;
-  margin-bottom: 7rem;
+  max-width: 90%;
+  padding: 1rem 0;
+  margin: 0 auto 7rem;
+  box-shadow: 0 5px 30px rgba(60, 80, 170, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
 }
 @media (min-width: 768px) {
   .section_chiffres {
-    width: 80%;
+    width: 90%;
     margin: 0rem auto 7rem;
     display: flex;
+    padding: 2rem 0;
     justify-content: space-between;
   }
 }
@@ -1075,11 +1079,12 @@ p {
 @media (min-width: 1370px) {
   .section_chiffres {
     margin-bottom: 12rem;
+    width: 50%;
   }
 }
 .section_chiffres .each_chiffres {
   display: flex;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   flex-direction: column;
   align-items: center;
 }
@@ -1090,38 +1095,45 @@ p {
     align-items: center;
     justify-content: center;
     width: 30%;
+    margin-bottom: 0;
   }
 }
+.section_chiffres .each_chiffres .symbole_chiffre img {
+  width: 55px;
+}
 .section_chiffres .each_chiffres .top_chiffres {
-  margin-bottom: 5px;
   font-weight: 700;
   color: #24292e;
 }
 .section_chiffres .each_chiffres .top_chiffres span {
-  font-size: 35px;
+  font-size: 25px;
 }
 .section_chiffres .each_chiffres .top_chiffres span.number_scroll {
-  font-size: 55px;
-  margin-left: 10px;
+  font-size: 35px;
 }
 @media (min-width: 768px) {
   .section_chiffres .each_chiffres .top_chiffres span.number_scroll {
-    font-size: 55px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1370px) {
+  .section_chiffres .each_chiffres .top_chiffres span.number_scroll {
+    font-size: 30px;
   }
 }
 .section_chiffres .each_chiffres .bottom_chiffres {
   color: #24292e;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (min-width: 768px) {
   .section_chiffres .each_chiffres .bottom_chiffres {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1024px) {
   .section_chiffres .each_chiffres .bottom_chiffres {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1443,7 +1455,7 @@ p {
 }
 .section_forfaits .connaitre_facturation {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 15px !important;
   line-height: 22px;
   color: #0075eb;
   padding: 2px 4px;
@@ -1458,8 +1470,37 @@ p {
 .section_forfaits .connaitre_facturation span {
   margin-left: 10px;
 }
+.section_forfaits .choice_facturation {
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: center;
+}
+.section_forfaits .choice_facturation .block_choice {
+  display: flex;
+  padding: 6px 5px;
+  justify-content: space-around;
+  background-color: #e4f1ff;
+  border-radius: 30px;
+  width: fit-content;
+}
+.section_forfaits .choice_facturation .block_choice .each_choice {
+  font-size: 14px;
+  max-width: 100%;
+  padding: 12px 10px;
+}
+@media (min-width: 375px) {
+  .section_forfaits .choice_facturation .block_choice .each_choice {
+    padding: 12px 18px;
+  }
+}
+.section_forfaits .choice_facturation .block_choice .each_choice:first-child {
+  background-color: white;
+  border-radius: 20px;
+  color: #0075eb;
+  font-weight: 500;
+}
 .section_forfaits .block_for_forfaits {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 @media (min-width: 768px) {
   .section_forfaits .block_for_forfaits {
@@ -1480,7 +1521,7 @@ p {
   border: 1px solid #0075eb;
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(141, 141, 141, 0.25);
-  padding: 0 10px 25px;
+  padding: 0 17px 25px;
   margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
@@ -1508,8 +1549,8 @@ p {
   font-weight: 600;
   color: white;
   padding: 13px 0;
-  left: 0;
-  width: 100%;
+  left: -3px;
+  width: 102%;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .title_f {
   margin-top: 35px;
@@ -1528,7 +1569,7 @@ p {
 }
 .section_forfaits .block_for_forfaits .each_forfaits .price_f {
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 42px;
   color: #0075eb;
   margin: 20px 0 5px;
@@ -1543,11 +1584,12 @@ p {
   text-align: center;
   color: #2B2B2B;
   font-weight: 500;
+  display: none;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .btn_choose_f {
   display: flex;
   justify-content: center;
-  margin: 35px 0;
+  margin: 22px 0 35px;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .btn_choose_f button {
   background: #0075eb;

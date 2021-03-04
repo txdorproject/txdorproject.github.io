@@ -1097,14 +1097,18 @@ p {
 }
 
 .section_chiffres {
-    max-width: 100%;
-    padding: 1rem 1.5rem;
-    margin-bottom: 7rem;
+    max-width: 90%;
+    padding: 1rem 0;
+    margin: 0 auto 7rem;
+    box-shadow: 0 5px 30px rgb(60 80 170 / 10%);
+    background-color: #fff;
+    border-radius: 10px;
 
     @media(min-width:768px) {
-        width: 80%;
+        width: 90%;
         margin: 0rem auto 7rem;
         display: flex;
+        padding: 2rem 0;
         justify-content: space-between;
     }
 
@@ -1115,11 +1119,12 @@ p {
 
     @media(min-width:1370px) {
         margin-bottom: 12rem;
+        width: 50%;
     }
 
     .each_chiffres {
         display: flex;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
         flex-direction: column;
         align-items: center;
 
@@ -1129,37 +1134,48 @@ p {
             align-items: center;
             justify-content: center;
             width: 30%;
+            margin-bottom: 0;
+        }
+
+        .symbole_chiffre {
+            
+            img {
+                width: 55px;
+            }
+            
         }
 
         .top_chiffres {
 
             span {
-                font-size: 35px;
+                font-size: 25px;
 
                 &.number_scroll {
-                    font-size: 55px;
-                    margin-left: 10px;
+                    font-size: 35px;
 
                     @media(min-width:768px) {
-                        font-size: 55px;
+                        font-size: 25px;
+                    }
+
+                    @media(min-width:1370px) {
+                        font-size: 30px;
                     }
                 }
             }
-            margin-bottom: 5px;
             font-weight: 700;
             color: #24292e;
         }
         .bottom_chiffres {
             color: #24292e;
-            font-size: 16px;
+            font-size: 14px;
 
             @media(min-width:768px) {
                 text-align: center;
-                font-size: 14px;
+                font-size: 13px;
             }
 
             @media(min-width:1024px) {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -1480,7 +1496,7 @@ p {
 
     .connaitre_facturation {
         font-weight: 400;
-        font-size: 15px;
+        font-size: 15px !important;
         line-height: 22px;
         color: #0075eb;
         padding: 2px 4px;
@@ -1496,9 +1512,41 @@ p {
         }
     }
 
+    .choice_facturation {
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: center;
+
+        .block_choice {
+            display: flex;
+            padding: 6px 5px;
+            justify-content: space-around;  
+            background-color: #e4f1ff;
+            border-radius: 30px;
+            width: fit-content;
+
+            .each_choice {
+                font-size: 14px;
+                max-width: 100%;
+                padding: 12px 10px;
+
+                @media(min-width:375px) {
+                    padding: 12px 18px;
+                }
+
+                &:first-child {
+                    background-color: white;
+                    border-radius: 20px;
+                    color: #0075eb;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
     .block_for_forfaits {
 
-        margin-top: 8rem;
+        margin-top: 6rem;
 
         @media(min-width:768px) {
             display: flex;
@@ -1517,7 +1565,7 @@ p {
             border: 1px solid #0075eb;
             box-sizing: border-box;
             box-shadow: 0px 4px 20px rgba(141, 141, 141, 0.25);
-            padding: 0 10px 25px;
+            padding: 0 17px 25px;
             margin-bottom: 3rem;
 
             @media(min-width:768px) {
@@ -1545,8 +1593,8 @@ p {
                 font-weight: 600;
                 color: white;
                 padding: 13px 0;
-                left: 0;
-                width: 100%;
+                left: -3px;
+                width: 102%;
             }
 
             .title_f {
@@ -1568,7 +1616,7 @@ p {
 
             .price_f {
                 text-align: center;
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 42px;
                 color: #0075eb;
                 margin: 20px 0 5px;
@@ -1584,12 +1632,13 @@ p {
                 text-align: center;
                 color: #2B2B2B;
                 font-weight: 500;
+                display: none;
             }
 
             .btn_choose_f {
                 display: flex;
                 justify-content: center;
-                margin: 35px 0;
+                margin: 22px 0 35px;
                 button {
                     background: #0075eb;
                     border-radius: 5px;

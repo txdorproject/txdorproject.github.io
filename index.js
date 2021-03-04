@@ -288,6 +288,15 @@ const handleIntersectNumb = (entries, observer) => {
 					clearInterval(reaGraph)
 				}
 			}
+			var ligneCode = setInterval(ligneCodeNum, 1);
+			let count4 = 49300;
+			function ligneCodeNum(each_selector) {
+				count4++;
+				document.querySelector('#number-4').innerHTML = count4
+				if (count4 == 50000) {
+					clearInterval(ligneCode)
+				}
+			}
 			observer.unobserve(entry.target)
 		}
 	})
