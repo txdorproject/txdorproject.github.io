@@ -57,6 +57,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(r => {
  var go_to_forfaits = document.querySelectorAll('.go_to_forfaits');
  var go_to_a_propros = document.querySelectorAll('.go_to_a_propros');
  var see_tarifs_service = document.querySelectorAll('.see_tarifs_service a')
+ var tarif_btn = document.querySelectorAll('.tarif_btn')
 
 function scrollToSection(section, offSetOfSection) {
 	for(var v of section) {
@@ -80,6 +81,7 @@ scrollToSection(go_to_identite, document.querySelector('.big_block_identite').of
 scrollToSection(go_to_forfaits, document.querySelector('.section_forfaits').offsetTop)
 scrollToSection(go_to_a_propros, document.querySelector('.section_about_us').offsetTop)
 scrollToSection(see_tarifs_service, document.querySelector('.section_forfaits').offsetTop)
+scrollToSection(tarif_btn, document.querySelector('.section_forfaits').offsetTop)
 
 
 
@@ -308,4 +310,33 @@ document.querySelectorAll('.section_chiffres').forEach(r => {
 })
 
 
+/**
+ * Change forfaits
+ */
 
+var each_choice = document.querySelectorAll('.each_choice')
+each_choice.forEach(elementChoice => {
+	elementChoice.addEventListener('click', function() {
+		var allChoice = document.querySelectorAll('.each_choice')
+		allChoice.forEach(removeChoice => {
+			removeChoice.classList.remove('choosen_forfait')
+		})
+		this.classList.add('choosen_forfait')
+		var dChoice = this.getAttribute('data-choice')
+		if(dChoice == "direct") {
+			document.querySelectorAll('.price_f_month').forEach(monthPrice => {
+				monthPrice.style.display = "none"
+			})
+			document.querySelectorAll('.price_f').forEach(directPrice => {
+				directPrice.style.display = "flex"
+			})
+		} else {
+			document.querySelectorAll('.price_f_month').forEach(monthPrice => {
+				monthPrice.style.display = "flex"
+			})
+			document.querySelectorAll('.price_f').forEach(directPrice => {
+				directPrice.style.display = "none"
+			})
+		}
+	})
+})

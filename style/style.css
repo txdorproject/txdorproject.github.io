@@ -437,7 +437,14 @@ p {
   font-family: "Roboto", sans-serif;
   border: none;
   font-weight: 700;
+  border: solid 1px transparent;
   cursor: pointer;
+}
+.popup_contact_mobile .formulaire_contact .btn_contact_mobile button:hover {
+  box-shadow: 0 4px 8px rgba(212, 212, 212, 0.74);
+  transition: ease-in 0.1s;
+  border: solid 1px #76FFA5;
+  background-color: white;
 }
 .popup_contact_mobile .formulaire_contact .btn_contact_mobile button:focus {
   outline: none;
@@ -465,7 +472,7 @@ p {
   cursor: pointer;
 }
 .social_media_link .each_social i {
-  padding: 4px;
+  padding: 3px;
 }
 .social_media_link .each_social.fb {
   background-color: #4267B2;
@@ -563,7 +570,6 @@ p {
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet {
   position: absolute;
-  display: none;
   background-color: white;
   border: solid 1px #eaeaea;
   top: 37px;
@@ -572,9 +578,25 @@ p {
   padding: 2.5rem 3rem;
   border-radius: 5px;
   z-index: 9;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+@media (min-width: 1370px) {
+  .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet {
+    width: 800px;
+    left: -300px;
+  }
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet.open {
-  display: flex;
+  box-shadow: 0 10px 20px #e8e8e891;
+  transition: 0.3s;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  transform: rotateX(0deg);
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet {
   color: #191c1f;
@@ -582,6 +604,16 @@ p {
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet:nth-child(3) {
   margin: 0 25px;
+}
+@media (min-width: 1370px) {
+  .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet:nth-child(3) {
+    margin: 0;
+  }
+}
+@media (min-width: 1370px) {
+  .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet {
+    width: 30%;
+  }
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet:hover {
   background-color: #ecfbff;
@@ -591,19 +623,21 @@ p {
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .top_each_hover {
   display: flex;
 }
-.section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .top_each_hover .img_services i {
-  font-size: 16px;
-  color: #2fd1bb;
-  margin-right: 5px;
+.section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .top_each_hover .img_services {
+  margin-bottom: 15px;
 }
-.section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .top_each_hover .title_each_hover {
+.section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .top_each_hover .img_services img {
+  width: 40px;
+  height: 40px;
+}
+.section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .title_each_hover {
   font-weight: 600;
   color: #191c1f;
   margin-bottom: 13px;
   font-size: 15px;
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet .each_services_menu_tablet .bottom_each_hover {
-  font-size: 14px;
+  font-size: 13px;
   color: #6a737d;
   font-weight: 300;
   line-height: 20px;
@@ -635,12 +669,24 @@ p {
     box-sizing: border-box;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
-    padding: 7px 15px;
+    padding: 9px 15px;
     color: white;
     font-weight: 500;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     outline: none;
+  }
+  .section_top_presentation .header .inside_header .contact_header button img {
+    margin-left: 3px;
+    transition: ease-in 0.1s;
+  }
+  .section_top_presentation .header .inside_header .contact_header button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: ease-in 0.2s;
+  }
+  .section_top_presentation .header .inside_header .contact_header button:hover img {
+    margin-left: 7px;
+    transition: ease-in 0.1s;
   }
 }
 .section_top_presentation .explain {
@@ -763,8 +809,18 @@ p {
   font-size: 16px;
   line-height: 150.7%;
   color: #303030;
+  border: solid 1px transparent;
   font-weight: 700;
   cursor: pointer;
+}
+.section_top_presentation .explain .block_btn .contact_btn:hover {
+  background: white;
+  border: solid 1px #76FFA5;
+  transition: ease-in 0.1s;
+}
+.section_top_presentation .explain .block_btn .contact_btn:hover .arrow_btn {
+  margin-left: 19px;
+  transition: ease-in 0.1s;
 }
 @media (min-width: 768px) {
   .section_top_presentation .explain .block_btn .contact_btn {
@@ -807,6 +863,16 @@ p {
   color: #303030;
   font-weight: 500;
   cursor: pointer;
+}
+.section_top_presentation .explain .block_btn .tarif_btn:hover {
+  background: #76FFA5;
+  border: solid 1px transparent;
+  color: #303030;
+  transition: ease-in 0.1s;
+}
+.section_top_presentation .explain .block_btn .tarif_btn:hover .arrow_btn {
+  margin-left: 19px;
+  transition: ease-in 0.1s;
 }
 @media (min-width: 768px) {
   .section_top_presentation .explain .block_btn .tarif_btn {
@@ -860,23 +926,25 @@ p {
 }
 .section_about_us .top_blue {
   position: absolute;
-  background: rgba(73, 103, 227, 0.45);
+  background: #0075eb8c;
   border-radius: 10px;
   height: 100px;
   width: 150px;
   z-index: 2;
   top: 3px;
   right: 10px;
+  display: none;
 }
 .section_about_us .bottom_blue {
   position: absolute;
-  background: rgba(73, 103, 227, 0.45);
+  background: #0075eb8c;
   border-radius: 10px;
   height: 150px;
   width: 200px;
   z-index: 2;
   bottom: 3px;
   left: 10px;
+  display: none;
 }
 @media (min-width: 768px) {
   .section_about_us .bottom_blue {
@@ -973,9 +1041,9 @@ p {
   }
 }
 .section_about_us .block_all_about_us .bottom_about_us .review_client .bottom_review p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   color: #6a737d;
 }
@@ -1003,28 +1071,55 @@ p {
 }
 @media (min-width: 1370px) {
   .section_what_we_do {
-    width: 65%;
+    width: 90%;
     margin: 0 auto;
   }
 }
 .section_what_we_do .block_each_wwd {
-  background-color: white;
   box-shadow: 0px 4px 20px rgba(180, 180, 180, 0.25);
   padding: 1.5rem;
   margin-bottom: 3rem;
+  position: relative;
+  border-radius: 10px;
 }
 @media (min-width: 768px) {
   .section_what_we_do .block_each_wwd {
     width: 25%;
   }
 }
+.section_what_we_do .block_each_wwd .img_each_ww {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: radial-gradient(116.76% 59.97% at 50% 50%, #00C443 0%, #8BFEB2 100%), #FFFFFF;
+  opacity: 0.7;
+  left: 0;
+  border-radius: 10px;
+}
+.section_what_we_do .block_each_wwd.dev {
+  background-image: url("/images/developpeur_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_what_we_do .block_each_wwd.street {
+  background-image: url("/images/street_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.section_what_we_do .block_each_wwd.success {
+  background-image: url("/images/success_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .section_what_we_do .block_each_wwd .title h3 {
   margin: 0 0 15px;
+  z-index: 4;
   font-size: 22px;
   text-align: center;
-  background: -webkit-linear-gradient(#2EFF81, #9AE7FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  position: relative;
 }
 @media (min-width: 768px) {
   .section_what_we_do .block_each_wwd .title h3 {
@@ -1038,8 +1133,10 @@ p {
 }
 .section_what_we_do .block_each_wwd .description p {
   font-size: 15px;
-  color: #6a737d;
-  line-height: 23px;
+  z-index: 4;
+  color: #ffffff;
+  line-height: 22px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .section_what_we_do .block_each_wwd .description p {
@@ -1048,8 +1145,8 @@ p {
 }
 @media (min-width: 1370px) {
   .section_what_we_do .block_each_wwd .description p {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -1079,7 +1176,7 @@ p {
 @media (min-width: 1370px) {
   .section_chiffres {
     margin-bottom: 12rem;
-    width: 50%;
+    width: 55%;
   }
 }
 .section_chiffres .each_chiffres {
@@ -1396,6 +1493,23 @@ p {
   text-decoration: none;
   padding-bottom: 2px;
   line-height: 22px;
+  position: relative;
+}
+.section_services .block_big_inside_services .each_services .block_for_all_informations .see_tarifs_service a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #0075eb;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section_services .block_big_inside_services .each_services .block_for_all_informations .see_tarifs_service a:hover::after {
+  width: 100%;
+  left: 0;
 }
 .section_services .block_big_inside_services .each_services .block_for_all_informations .see_tarifs_service span {
   margin-left: 10px;
@@ -1460,6 +1574,24 @@ p {
   color: #0075eb;
   padding: 2px 4px;
   width: fit-content;
+  cursor: pointer;
+  position: relative;
+}
+.section_forfaits .connaitre_facturation::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #0075eb;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section_forfaits .connaitre_facturation:hover::after {
+  width: 100%;
+  left: 0;
 }
 @media (min-width: 768px) {
   .section_forfaits .connaitre_facturation {
@@ -1482,22 +1614,36 @@ p {
   background-color: #e4f1ff;
   border-radius: 30px;
   width: fit-content;
+  position: relative;
+}
+.section_forfaits .choice_facturation .block_choice .save_up {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-color: #0075eb;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: white;
 }
 .section_forfaits .choice_facturation .block_choice .each_choice {
   font-size: 14px;
   max-width: 100%;
   padding: 12px 10px;
+  cursor: pointer;
 }
 @media (min-width: 375px) {
   .section_forfaits .choice_facturation .block_choice .each_choice {
     padding: 12px 18px;
   }
 }
-.section_forfaits .choice_facturation .block_choice .each_choice:first-child {
+.section_forfaits .choice_facturation .block_choice .each_choice.choosen_forfait {
   background-color: white;
   border-radius: 20px;
   color: #0075eb;
   font-weight: 500;
+  transition: ease-in 0.2s;
 }
 .section_forfaits .block_for_forfaits {
   margin-top: 6rem;
@@ -1520,9 +1666,14 @@ p {
   background: #FFFFFF;
   border: 1px solid #0075eb;
   box-sizing: border-box;
-  box-shadow: 0px 4px 20px rgba(141, 141, 141, 0.25);
+  box-shadow: 0px 4px 20px rgba(156, 156, 156, 0.25);
   padding: 0 17px 25px;
   margin-bottom: 3rem;
+  cursor: pointer;
+}
+.section_forfaits .block_for_forfaits .each_forfaits:hover {
+  box-shadow: 0px 4px 20px rgba(49, 49, 49, 0.178);
+  transition: ease-in 0.1s;
 }
 @media (min-width: 768px) {
   .section_forfaits .block_for_forfaits .each_forfaits {
@@ -1568,16 +1719,36 @@ p {
   text-align: center;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .price_f {
-  text-align: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 42px;
   color: #0075eb;
   margin: 20px 0 5px;
+  display: flex;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .price_f .euro {
   margin-left: 5px;
   font-size: 14px;
   color: #2B2B2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_forfaits .block_for_forfaits .each_forfaits .price_f_month {
+  justify-content: center;
+  font-weight: 500;
+  font-size: 42px;
+  color: #0075eb;
+  margin: 20px 0 5px;
+  display: none;
+}
+.section_forfaits .block_for_forfaits .each_forfaits .price_f_month .euro {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #2B2B2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .infos_price {
   font-size: 15px;
@@ -1600,6 +1771,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .section_forfaits .block_for_forfaits .each_forfaits .btn_choose_f button {
@@ -1648,10 +1820,24 @@ p {
   z-index: 10;
 }
 .section_appel_contact .block_appel_contact {
-  background: radial-gradient(182.26% 243.9% at 50% 50%, #8BFEB2 0%, #00C443 100%);
   box-shadow: 10px 10px 20px rgba(148, 148, 148, 0.25);
   border-radius: 20px;
-  padding: 2rem 1.3rem;
+  padding: 3rem 1.3rem;
+  background-image: url("/images/nouveau_marche.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.section_appel_contact .block_appel_contact .absolute_appel_contact {
+  background: radial-gradient(182.26% 243.9% at 50% 50%, #8BFEB2 0%, #00C443 100%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.8;
+  border-radius: 20px;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .section_appel_contact .block_appel_contact {
@@ -1679,11 +1865,13 @@ p {
 }
 .section_appel_contact .block_appel_contact .block_text {
   text-align: center;
+  z-index: 3;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .section_appel_contact .block_appel_contact .block_text {
     text-align: left;
-    width: 70%;
+    width: 67%;
   }
 }
 .section_appel_contact .block_appel_contact .block_text h3 {
@@ -1705,6 +1893,8 @@ p {
 }
 .section_appel_contact .block_appel_contact .block_btn {
   text-align: center;
+  z-index: 3;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .section_appel_contact .block_appel_contact .block_btn {
@@ -1720,11 +1910,24 @@ p {
   color: white;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .section_appel_contact .block_appel_contact .block_btn button {
-    padding: 12px 25px;
+    padding: 12px 18px;
   }
+}
+.section_appel_contact .block_appel_contact .block_btn button img {
+  margin-left: 5px;
+  transition: ease-in 0.1s;
+}
+.section_appel_contact .block_appel_contact .block_btn button:hover {
+  background-color: #666666;
+  transition: ease-in 0.2s;
+}
+.section_appel_contact .block_appel_contact .block_btn button:hover img {
+  margin-left: 9px;
+  transition: ease-in 0.1s;
 }
 
 .section_footer {
