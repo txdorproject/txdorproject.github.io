@@ -124,6 +124,13 @@ close_menu_mobile.addEventListener('click', () => {
 	hover_menu_tablet.classList.remove('open')
  })
 
+ var each_services_menu_tablet = document.querySelectorAll('.each_services_menu_tablet')
+ each_services_menu_tablet.forEach(elementMenu => {
+	 elementMenu.addEventListener('click', function() {
+		hover_menu_tablet.classList.remove('open')
+	 })
+ })
+
 
 /**
  * Open contact popup
@@ -135,18 +142,21 @@ close_menu_mobile.addEventListener('click', () => {
  contact_btn.addEventListener('click', function() {
      document.querySelector('.popup_contact_mobile').classList.add('open')
 	 dark_mode_menu_active.classList.add('active');
+	 document.body.style.overflow = "hidden";
  })
 
  var contact_header = document.querySelector('.contact_header')
  	contact_header.addEventListener('click', function() {
 	document.querySelector('.popup_contact_mobile').classList.add('open')
 	dark_mode_menu_active.classList.add('active');
+	document.body.style.overflow = "hidden";
 })
 
 var close_popup_mobile = document.querySelector('.close_popup_mobile')
 close_popup_mobile.addEventListener('click', function() {
 	document.querySelector('.popup_contact_mobile').classList.remove('open')
 	dark_mode_menu_active.classList.remove('active');
+	document.body.style.overflow = "auto";
 })
 
 var btn_choose_f = document.querySelectorAll('.btn_choose_f')
@@ -179,6 +189,21 @@ contactUsMobile.addEventListener('click', function() {
 	dark_mode_menu_active.classList.add('active');
 })
 
+
+/**
+ * Modal connaitre facturation
+ */
+
+var connaitre_facturation = document.querySelector('.connaitre_facturation')
+connaitre_facturation.addEventListener('click', function() {
+	document.querySelector('.modal_connaitre_facturation').classList.add('open')
+	dark_mode_menu_active.classList.add('active');
+})
+
+document.querySelector('.close_connaitre').addEventListener('click', function() {
+	document.querySelector('.modal_connaitre_facturation').classList.remove('open')
+	dark_mode_menu_active.classList.remove('active');
+  })
 
  
  /**

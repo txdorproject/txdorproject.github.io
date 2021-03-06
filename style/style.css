@@ -136,6 +136,12 @@ p {
   align-items: center;
   color: #24292e;
 }
+.menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a .icon_and_title .vector_mobile {
+  width: 40px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
 .menu_mobile .services_menu_mobile .bloc_all_services .each_services_mobile_menu a p {
   margin: 0;
   margin-left: 10px;
@@ -199,7 +205,7 @@ p {
   }
 }
 .menu_mobile .services_menu_mobile .bloc_socialMedia {
-  margin-top: 15px;
+  margin-top: 35px;
   margin-bottom: 15px;
   width: 100%;
   text-align: center;
@@ -587,7 +593,7 @@ p {
 @media (min-width: 1370px) {
   .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet {
     width: 800px;
-    left: -300px;
+    left: -312px;
   }
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet.open {
@@ -1519,6 +1525,7 @@ p {
   max-width: 100%;
   padding: 1rem 1.5rem;
   margin-bottom: 6rem;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .section_forfaits {
@@ -1601,6 +1608,65 @@ p {
 }
 .section_forfaits .connaitre_facturation span {
   margin-left: 10px;
+}
+.section_forfaits .modal_connaitre_facturation {
+  margin: 15px auto;
+  position: absolute;
+  box-shadow: 0 5px 10px #4e4e4e57;
+  border-radius: 10px;
+  padding: 20px 0;
+  z-index: 10;
+  background-color: white;
+  display: none;
+}
+.section_forfaits .modal_connaitre_facturation.open {
+  display: block;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .section_forfaits .modal_connaitre_facturation.open {
+    left: 10%;
+    width: 80%;
+  }
+}
+@media (min-width: 1370px) {
+  .section_forfaits .modal_connaitre_facturation.open {
+    left: 20%;
+    width: 60%;
+  }
+}
+@media (min-width: 1650px) {
+  .section_forfaits .modal_connaitre_facturation.open {
+    left: 22%;
+    width: 55%;
+  }
+}
+.section_forfaits .modal_connaitre_facturation img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.section_forfaits .modal_connaitre_facturation .each_connaitre {
+  margin: 30px 15px 20px;
+}
+.section_forfaits .modal_connaitre_facturation .each_connaitre .title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.section_forfaits .modal_connaitre_facturation .each_connaitre .explain ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section_forfaits .modal_connaitre_facturation .each_connaitre .explain ul li {
+  padding-left: 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 21px;
+  width: 80%;
 }
 .section_forfaits .choice_facturation {
   margin: 2rem auto 0;
@@ -1772,6 +1838,10 @@ p {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+}
+.section_forfaits .block_for_forfaits .each_forfaits .btn_choose_f button:hover {
+  background: #2291ff;
+  transition: ease-in 0.15s;
 }
 @media (min-width: 768px) {
   .section_forfaits .block_for_forfaits .each_forfaits .btn_choose_f button {
@@ -1977,9 +2047,19 @@ p {
   }
 }
 .section_footer .block_for_links .each_b_links .title_ebl {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #2B2B2B;
+}
+@media (min-width: 768px) {
+  .section_footer .block_for_links .each_b_links .title_ebl {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  .section_footer .block_for_links .each_b_links .title_ebl {
+    font-size: 15px;
+  }
 }
 .section_footer .block_for_links .each_b_links .title_ebl a {
   text-decoration: none;
@@ -1996,6 +2076,12 @@ p {
   display: flex;
   flex-direction: column;
   padding: 15px 0 20px;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .section_footer .block_for_links .each_b_links .list_of_links {
+    font-size: 15px;
+  }
 }
 .section_footer .block_for_links .each_b_links .list_of_links a {
   text-decoration: none;
