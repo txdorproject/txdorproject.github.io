@@ -1665,6 +1665,7 @@ p {
         @media(min-width:768px) {
             text-align: center;
             margin: 0 auto;
+            font-size: 15px !important;
         }
 
         span {
@@ -1938,7 +1939,7 @@ p {
                     h4 {
                         font-weight: 400;
                         font-size: 15px;
-                        line-height: 23px;
+                        line-height: 21px;
                     }
                 }
 
@@ -1952,6 +1953,7 @@ p {
                     color: #2B2B2B;
                     line-height: 21px;
                     margin: 10px 0;
+                    font-size: 15px;
                 }
 
                 ul {
@@ -1962,11 +1964,11 @@ p {
 
                     li {
                         color: red;
-                        margin-bottom: 2px;
+                        margin-bottom: 1px;
                         font-weight: 300;
                         font-size: 13.5px;
                         color: #6a737d;
-                        line-height: 22px;
+                        line-height: 17px;
                     }
                 }
             }
@@ -2019,6 +2021,7 @@ p {
 
         @media(min-width:1650px) {
             width: 50%;
+            padding : 4rem 2.3rem;
         }
 
         .block_text {
@@ -2314,4 +2317,42 @@ p {
     background-image: url('/images/404_mobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+// Success page
+
+.section_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    height: 80vh;
+    text-align: center;
+    img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .success_message {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 25px;
+        color: #303030;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color:rgb(106, 115, 125);
+        line-height: 20px;
+    }
+
+    .redirect {
+        margin-top: 25px;
+        #decompte_success {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
 }
