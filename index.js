@@ -198,11 +198,13 @@ var connaitre_facturation = document.querySelector('.connaitre_facturation')
 connaitre_facturation.addEventListener('click', function() {
 	document.querySelector('.modal_connaitre_facturation').classList.add('open')
 	dark_mode_menu_active.classList.add('active');
+	document.body.style.overflow = "hidden";
 })
 
 document.querySelector('.close_connaitre').addEventListener('click', function() {
 	document.querySelector('.modal_connaitre_facturation').classList.remove('open')
 	dark_mode_menu_active.classList.remove('active');
+	document.body.style.overflow = "auto";
   })
 
  
@@ -215,6 +217,7 @@ var nameContactForm = document.getElementById('nameContactForm');
 var emailContactForm = document.getElementById('emailContactForm');
 var selectContactForm = document.getElementById('selectContactForm');
 var messageContactForm = document.getElementById('messageContactForm');
+
 
 form.addEventListener('submit', e => {
 	e.preventDefault();

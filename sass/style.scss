@@ -406,7 +406,7 @@ p {
                     right: 23px;
 
                     @media(min-width:768px) {
-                        top: 27px;
+                        top: 34px;
                         right: 45px;
                     }
                 }
@@ -453,6 +453,7 @@ p {
             margin-bottom: 2rem;
             display: flex;
             justify-content: center;
+            cursor: not-allowed !important;
 
             button {
                 background: #76FFA5;
@@ -470,7 +471,7 @@ p {
                 border: none;
                 font-weight: 700;
                 border: solid 1px transparent;
-                cursor: pointer;
+                cursor: not-allowed !important;
 
                 &:hover {
                     box-shadow: 0 4px 8px rgba(212, 212, 212, 0.74);
@@ -1675,7 +1676,7 @@ p {
 
     .modal_connaitre_facturation {
         margin: 15px auto;
-        position: absolute;
+        position: fixed;
         box-shadow: 0 5px 10px #4e4e4e57;
         border-radius: 10px;
         padding: 20px 0;
@@ -1685,7 +1686,7 @@ p {
 
         &.open {
             display: block;
-            top: 7%;
+            top: 30%;
             left: 5%;
             width: 90%;
 

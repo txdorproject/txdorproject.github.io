@@ -385,7 +385,7 @@ p {
 }
 @media (min-width: 768px) {
   .popup_contact_mobile .formulaire_contact .form_control i.icon_select {
-    top: 27px;
+    top: 34px;
     right: 45px;
   }
 }
@@ -427,6 +427,7 @@ p {
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  cursor: not-allowed !important;
 }
 .popup_contact_mobile .formulaire_contact .btn_contact_mobile button {
   background: #76FFA5;
@@ -444,7 +445,7 @@ p {
   border: none;
   font-weight: 700;
   border: solid 1px transparent;
-  cursor: pointer;
+  cursor: not-allowed !important;
 }
 .popup_contact_mobile .formulaire_contact .btn_contact_mobile button:hover {
   box-shadow: 0 4px 8px rgba(212, 212, 212, 0.74);
@@ -1612,7 +1613,7 @@ p {
 }
 .section_forfaits .modal_connaitre_facturation {
   margin: 15px auto;
-  position: absolute;
+  position: fixed;
   box-shadow: 0 5px 10px #4e4e4e57;
   border-radius: 10px;
   padding: 20px 0;
@@ -1622,7 +1623,7 @@ p {
 }
 .section_forfaits .modal_connaitre_facturation.open {
   display: block;
-  top: 7%;
+  top: 30%;
   left: 5%;
   width: 90%;
 }
