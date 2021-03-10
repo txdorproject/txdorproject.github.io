@@ -15,7 +15,7 @@
         <div class="services_menu_mobile">
             <div class="bloc_all_services">
                 <div class="each_services_mobile_menu go_to_vitrine">
-                    <a href="">
+                    <a href="#">
                         <div class="icon_and_title">
                             <img class="vector_mobile" src="/images/code.svg" alt="">
                             <p>Site vitrine</p>
@@ -24,7 +24,7 @@
                     </a>
                 </div>
                 <div class="each_services_mobile_menu go_to_ecommerce">
-                    <a href="">
+                    <a href="#">
                         <div class="icon_and_title">
                             <img class="vector_mobile" src="/images/shopping-online.svg" alt="">
                             <p>Site E-commerce</p>
@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div class="each_services_mobile_menu go_to_identite">
-                    <a href="">
+                    <a href="#">
                         <div class="icon_and_title">
                             <img class="vector_mobile" src="/images/design-tools.svg" alt="">
                             <p>Identité visuelle</p>
@@ -44,8 +44,8 @@
             </div>
             <div class="block_others">
                 <a href="">Nos services</a>
-                <a href="" class="go_to_forfaits">Nos forfaits</a>
-                <a href="" class="go_to_a_propros">A propos</a>
+                <a href="#" class="go_to_forfaits">Nos forfaits</a>
+                <a href="#" class="go_to_a_propros">A propos</a>
             </div>
             <div class="bloc_contactUs">
                 <button id="contactUsMobile">Prendre contact</button>
@@ -65,52 +65,57 @@
         <div class="each_social insta"><i class="fab fa-instagram"></i></div>
         <div class="each_social twitter"><i class="fab fa-twitter"></i></div>
     </div>
-    <div class="popup_contact_mobile" id="popup_contact_mobile">
-        <img class="close_popup_mobile" src="/images/close_menu.svg" alt="">
-        <div class="title">
-            Discutons de votre projet
-        </div>
-        <div class="explain">
-            Nous vous répondrons dans un délai d'un à deux jours par e-mail. N'oubliez pas non plus de vérifier vos spams au cas où!        
-        </div>
-        <div class="formulaire_contact">
-            <form action="POST" id="form">
-                <div class="form_control">
-                    <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small></small>
-                </div>
-                <div class="form_control">
-                    <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small></small>
-                </div>
-                <div class="form_control">
-                    <legend>Votre forfait</legend>
-                    <select name="forfaits" id="selectContactForm">
-                        <option value="proC" name="proContactOption">PROFESSIONNEL</option>
-                        <option value="businessC" name="businessContactOption">BUSINESS</option>
-                        <option value="personnaliseC" name="personnaliseContactOption">PERSONNALISE</option>
-                    </select>
-                    <i class="fas fa-check-circle icon_select"></i>
-                    <i class="fas fa-exclamation-circle icon_select"></i>
-                    <small></small>
-                </div>
-                <div class="form_control">
-                    <textarea name="message" placeholder="Votre message *" id="messageContactForm"></textarea>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-                <div class="btn_contact_mobile">
-                    <a href="success.html">test success</a>
-                    <button>Envoyer</button>
-                </div>
-            </form>
+
+    
+    <div class="block_popup_contact_mobile">
+        <div class="popup_contact_mobile" id="popup_contact_mobile">
+            <img class="close_popup_mobile" src="/images/close_menu.svg" alt="">
+            <div class="title">
+                Discutons de votre projet
+            </div>
+            <div class="explain">
+                Nous vous répondrons dans un délai d'un à deux jours par e-mail. N'oubliez pas non plus de vérifier vos spams au cas où!        
+            </div>
+            <div class="formulaire_contact">
+                <form action="POST" id="form">
+                    <div class="form_control">
+                        <input type="text" placeholder="Votre nom *" name="nomContact" id="nameContactForm">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                    <div class="form_control">
+                        <input type="email" placeholder="Votre email *" name="emailContact" id="emailContactForm">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small></small>
+                    </div>
+                    <div class="form_control">
+                        <legend>Votre forfait</legend>
+                        <select name="forfaits" id="selectContactForm">
+                            <option value="proC" name="proContactOption">PROFESSIONNEL</option>
+                            <option value="businessC" name="businessContactOption">BUSINESS</option>
+                            <option value="personnaliseC" name="personnaliseContactOption">PERSONNALISE</option>
+                        </select>
+                        <i class="fas fa-check-circle icon_select"></i>
+                        <i class="fas fa-exclamation-circle icon_select"></i>
+                        <small></small>
+                    </div>
+                    <div class="form_control">
+                        <textarea name="message" placeholder="Votre message *" id="messageContactForm"></textarea>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="btn_contact_mobile">
+                        <a href="success.html">test success</a>
+                        <button>Envoyer</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    
 
     <div class="section_top_presentation">
         <div class="header">
@@ -131,7 +136,7 @@
                                 </a>
                             </div>
                             <div class="each_services_menu_tablet">
-                                <a href="" class="go_to_ecommerce">
+                                <a href="#" class="go_to_ecommerce">
                                     <div class="top_each_hover">
                                         <div class="img_services"><img src="/images/shopping-online.svg" alt=""></div>
                                     </div>
@@ -140,7 +145,7 @@
                                 </a>
                             </div>
                             <div class="each_services_menu_tablet">
-                                <a href="" class="go_to_identite">
+                                <a href="#" class="go_to_identite">
                                     <div class="top_each_hover">
                                         <div class="img_services"><img src="/images/design-tools.svg" alt=""></div>
                                     </div>
@@ -150,8 +155,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each_link_header go_to_forfaits"><a href="">Nos forfaits</a></div>
-                    <div class="each_link_header go_to_a_propros"><a href="">A propos</a></div>
+                    <div class="each_link_header go_to_forfaits"><a href="#">Nos forfaits</a></div>
+                    <div class="each_link_header go_to_a_propros"><a href="#">A propos</a></div>
                 </div>
                 <div class="contact_header">
                     <button>Nous contacter <img class="arrow_btn header_btn" src="/images/arrow_white.svg" alt=""></button>
@@ -294,7 +299,7 @@
                         <div class="each_tags">Examen & test</div>
                         <div class="each_tags">SEO & SEA</div>
                     </div>
-                    <div class="see_tarifs_service"><a href="">En savoir plus sur le forfait vitrine<span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
+                    <div class="see_tarifs_service"><a href="#">En savoir plus sur le forfait vitrine<span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
                 </div>
             </div>
             <div class="each_services revert_service_flex big_block_ecommerce">
@@ -325,7 +330,7 @@
                         <div class="each_tags">Base de données</div>
                         <div class="each_tags">HTTPS & SSL</div>
                     </div>
-                    <div class="see_tarifs_service"><a href="">En savoir plus sur le forfait E-commerce<span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
+                    <div class="see_tarifs_service"><a href="#">En savoir plus sur le forfait E-commerce<span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
                 </div>
             </div>
             <div class="each_services big_block_identite">
@@ -352,7 +357,7 @@
                         <div class="each_tags">Diffusion</div>
                         <div class="each_tags">Affinity Designer</div>
                     </div>
-                    <div class="see_tarifs_service"><a href="">En savoir plus sur le service d'identité visuelle <span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
+                    <div class="see_tarifs_service"><a href="#">En savoir plus sur le service d'identité visuelle <span><img src="/images/arrow_see_tarifs.svg" alt=""></span></a></div>
                 </div>
             </div>
         </div>
@@ -402,7 +407,7 @@
                 <div class="title_f">Vitrine professionnelle</div>
                 <div class="subtitle_f">La solution basique pour vous faire connaître au plus grand nombre.</div>
                 <div class="price_f">4140<span class="euro">€</span></div>
-                <div class="price_f_month">390<span class="euro">€ / mois / 12 mois</span></div>
+                <div class="price_f_month">414<span class="euro">€ / mois / 12 mois</span></div>
                 <div class="infos_price">Réglable en plusieurs mensualitées</div>
                 <div class="btn_choose_f"><button>Choisir ce forfait</button></div> 
                 <div class="block_list_services_f">
@@ -482,7 +487,7 @@
                 <div class="title_f">E-commerce business</div>
                 <div class="subtitle_f">La solution vous permettant de vendre en ligne sans limite</div>
                 <div class="price_f">9360<span class="euro">€</span></div>
-                <div class="price_f_month">650<span class="euro">€ / mois / 12 mois</span></div>
+                <div class="price_f_month">936<span class="euro">€ / mois / 12 mois</span></div>
                 <div class="infos_price">Réglable en plusieurs mensualitées</div>
                 <div class="btn_choose_f"><button>Choisir ce forfait</button></div> 
                 <div class="block_list_services_f">
@@ -602,9 +607,9 @@
                     Nos services
                 </div>
                 <div class="list_of_links">
-                    <a href="" class="go_to_vitrine">Site vitrine</a>
-                    <a href="" class="go_to_ecommerce">Site E-Commerce</a>
-                    <a href="" class="go_to_identite">Identité visuelle</a>
+                    <a href="#" class="go_to_vitrine">Site vitrine</a>
+                    <a href="#" class="go_to_ecommerce">Site E-Commerce</a>
+                    <a href="#" class="go_to_identite">Identité visuelle</a>
                 </div>
             </div>
             <div class="each_b_links">
@@ -612,9 +617,9 @@
                     Nos forfaits
                 </div>
                 <div class="list_of_links">
-                    <a href="" class="go_to_forfaits">Professionnel</a>
-                    <a href="" class="go_to_forfaits">Business</a>
-                    <a href="" class="go_to_forfaits">Personnalisé</a>
+                    <a href="#" class="go_to_forfaits">Professionnel</a>
+                    <a href="#" class="go_to_forfaits">Business</a>
+                    <a href="#" class="go_to_forfaits">Personnalisé</a>
                 </div>
             </div>
             <div class="each_b_links">
@@ -623,9 +628,6 @@
                 </div>
                 <div class="title_ebl others_tebl">
                     <a href="politique.html">Politiques de confidentialité</a>
-                </div>
-                <div class="title_ebl others_tebl">
-                    <a href="sitemap.html">Site Map</a> 
                 </div>
             </div>
             <div class="each_b_links">

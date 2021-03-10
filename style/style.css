@@ -83,6 +83,7 @@ p {
   opacity: 0.8;
   transition: ease-in-out 0.45s;
   display: flex;
+  overflow-y: auto;
 }
 .menu_mobile.active {
   transform: translateX(0);
@@ -99,6 +100,7 @@ p {
   margin-top: 18px;
   position: relative;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .menu_mobile .services_menu_mobile img {
   position: absolute;
@@ -216,82 +218,83 @@ p {
   margin: 0 5px;
 }
 
-.popup_contact_mobile {
+.block_popup_contact_mobile {
+  width: 100%;
+  height: 100%;
   position: fixed;
-  transform: translateY(-105%);
-  background-color: white;
-  z-index: 999999999;
-  opacity: 0;
-  transition: ease-in 0.4s;
+  z-index: 999;
+  transform: translateY(-110%);
+  opacity: 0.6;
+  transition: ease-in-out 0.45s;
+  display: flex;
+  overflow-y: auto;
+  justify-content: center;
 }
-@media (min-width: 375px) {
-  .popup_contact_mobile {
-    padding-bottom: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .popup_contact_mobile {
-    padding-bottom: 0;
-    left: 25%;
-    width: 50%;
-  }
-}
-@media (min-width: 1370px) {
-  .popup_contact_mobile {
-    left: 31%;
-    width: 40%;
-  }
-}
-@media (min-width: 1650px) {
-  .popup_contact_mobile {
-    left: 32%;
-    width: 36%;
-  }
-}
-.popup_contact_mobile::-webkit-scrollbar {
-  display: none;
-}
-.popup_contact_mobile img {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.popup_contact_mobile.open {
+.block_popup_contact_mobile.open {
   transform: translateY(0%);
   opacity: 1;
-  transition: ease-in 0.4s;
+  transition: ease-in-out 0.6s;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  display: flex;
+  justify-content: center;
 }
-@media (min-width: 1024px) {
-  .popup_contact_mobile.open {
-    transform: translateY(-2%);
-    background-color: white;
-    width: 50%;
+.block_popup_contact_mobile .popup_contact_mobile {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .block_popup_contact_mobile .popup_contact_mobile {
+    width: 75%;
+    margin-top: 5rem;
     height: fit-content;
     border-radius: 10px;
-    left: 25%;
-    top: 7%;
+    background-image: url("/images/design_modal_contact.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .block_popup_contact_mobile .popup_contact_mobile {
+    background-color: white;
+    width: 55%;
+    height: fit-content;
+    position: absolute;
+    margin-top: 5rem;
+    border-radius: 10px;
     background-image: url("/images/design_modal_contact.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @media (min-width: 1370px) {
-  .popup_contact_mobile.open {
-    left: 31%;
+  .block_popup_contact_mobile .popup_contact_mobile {
     width: 40%;
   }
 }
 @media (min-width: 1650px) {
-  .popup_contact_mobile.open {
-    left: 32%;
-    width: 36%;
+  .block_popup_contact_mobile .popup_contact_mobile {
+    width: 37%;
   }
 }
-.popup_contact_mobile .title {
+@media (min-width: 1850px) {
+  .block_popup_contact_mobile .popup_contact_mobile {
+    width: 33%;
+  }
+}
+.block_popup_contact_mobile .popup_contact_mobile::-webkit-scrollbar {
+  display: none;
+}
+.block_popup_contact_mobile .popup_contact_mobile img {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.block_popup_contact_mobile .popup_contact_mobile .title {
   text-align: center;
   font-size: 28px;
   padding: 2rem 0;
@@ -300,7 +303,7 @@ p {
   color: #24292e;
   margin: 4rem auto 0;
 }
-.popup_contact_mobile .explain {
+.block_popup_contact_mobile .popup_contact_mobile .explain {
   text-align: center;
   margin: 1rem auto 3.5rem;
   width: 80%;
@@ -308,42 +311,42 @@ p {
   line-height: 21px;
   color: #6a737d;
 }
-.popup_contact_mobile .formulaire_contact {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact {
   width: 80%;
   margin: 0 auto;
 }
-.popup_contact_mobile .formulaire_contact .form_control {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
-.popup_contact_mobile .formulaire_contact .form_control legend {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control legend {
   font-size: 13px;
   color: #6a737d;
 }
-.popup_contact_mobile .formulaire_contact .form_control.success input {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.success input {
   border-bottom-color: #47ff95;
   font-family: "Roboto", sans-serif;
 }
-.popup_contact_mobile .formulaire_contact .form_control.success .fa-check-circle {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.success .fa-check-circle {
   color: #47ff95;
   visibility: visible;
 }
-.popup_contact_mobile .formulaire_contact .form_control.success small {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.success small {
   visibility: visible;
 }
-.popup_contact_mobile .formulaire_contact .form_control.error input {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.error input {
   border-bottom-color: #fb6f60;
   font-family: "Roboto", sans-serif;
 }
-.popup_contact_mobile .formulaire_contact .form_control.error .fa-exclamation-circle {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.error .fa-exclamation-circle {
   color: #fb6f60;
   visibility: visible;
 }
-.popup_contact_mobile .formulaire_contact .form_control.error small {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control.error small {
   visibility: visible;
 }
-.popup_contact_mobile .formulaire_contact .form_control small {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control small {
   color: #fb6f60;
   position: absolute;
   bottom: 0;
@@ -351,45 +354,45 @@ p {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
 }
-.popup_contact_mobile .formulaire_contact .form_control input {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control input {
   border: none;
   border-bottom: solid 1px #cacaca;
   padding: 8px;
   width: 95%;
   font-family: "Roboto", sans-serif;
 }
-.popup_contact_mobile .formulaire_contact .form_control input:focus {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control input:focus {
   outline: 0;
 }
-.popup_contact_mobile .formulaire_contact .form_control i {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control i {
   visibility: hidden;
   position: absolute;
   top: 6px;
   right: 4px;
 }
 @media (min-width: 375px) {
-  .popup_contact_mobile .formulaire_contact .form_control i {
+  .block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control i {
     top: 6px;
     right: 10px;
   }
 }
 @media (min-width: 768px) {
-  .popup_contact_mobile .formulaire_contact .form_control i {
+  .block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control i {
     top: 10px;
     right: 30px;
   }
 }
-.popup_contact_mobile .formulaire_contact .form_control i.icon_select {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control i.icon_select {
   top: 26px;
   right: 23px;
 }
 @media (min-width: 768px) {
-  .popup_contact_mobile .formulaire_contact .form_control i.icon_select {
+  .block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control i.icon_select {
     top: 34px;
     right: 45px;
   }
 }
-.popup_contact_mobile .formulaire_contact .form_control select {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control select {
   margin: 8px 0 1rem 0;
   width: 100%;
   padding: 10px;
@@ -399,18 +402,18 @@ p {
   color: #24292e;
   font-family: "Roboto", sans-serif;
 }
-.popup_contact_mobile .formulaire_contact .form_control select option {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control select option {
   font-size: 12px;
   font-weight: 700;
   color: #24292e;
   font-family: "Roboto", sans-serif;
 }
 @media (min-width: 768px) {
-  .popup_contact_mobile .formulaire_contact .form_control select {
+  .block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control select {
     width: 97%;
   }
 }
-.popup_contact_mobile .formulaire_contact .form_control textarea {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control textarea {
   width: 93%;
   height: 200px;
   padding: 10px;
@@ -419,17 +422,17 @@ p {
   color: #24292e;
 }
 @media (min-width: 1024px) {
-  .popup_contact_mobile .formulaire_contact .form_control textarea {
+  .block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .form_control textarea {
     height: 120px;
   }
 }
-.popup_contact_mobile .formulaire_contact .btn_contact_mobile {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .btn_contact_mobile {
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   cursor: not-allowed !important;
 }
-.popup_contact_mobile .formulaire_contact .btn_contact_mobile button {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .btn_contact_mobile button {
   background: #76FFA5;
   border-radius: 5px;
   padding: 10px 30px;
@@ -447,13 +450,13 @@ p {
   border: solid 1px transparent;
   cursor: not-allowed !important;
 }
-.popup_contact_mobile .formulaire_contact .btn_contact_mobile button:hover {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .btn_contact_mobile button:hover {
   box-shadow: 0 4px 8px rgba(212, 212, 212, 0.74);
   transition: ease-in 0.1s;
   border: solid 1px #76FFA5;
   background-color: white;
 }
-.popup_contact_mobile .formulaire_contact .btn_contact_mobile button:focus {
+.block_popup_contact_mobile .popup_contact_mobile .formulaire_contact .btn_contact_mobile button:focus {
   outline: none;
 }
 
@@ -466,7 +469,7 @@ p {
 @media (min-width: 1024px) {
   .social_media_link {
     display: block;
-    z-index: 99;
+    z-index: 3;
   }
 }
 .social_media_link .each_social {
@@ -714,13 +717,13 @@ p {
 }
 @media (min-width: 1024px) {
   .section_top_presentation .explain {
-    margin-top: 3rem;
+    margin-top: 7rem;
   }
 }
 @media (min-width: 1370px) {
   .section_top_presentation .explain {
     width: 65%;
-    margin-top: 4.5rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 1650px) {

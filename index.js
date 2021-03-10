@@ -132,6 +132,14 @@ close_menu_mobile.addEventListener('click', () => {
  })
 
 
+var section_top_presentation = document.querySelector('.section_top_presentation .explain')
+section_top_presentation.addEventListener('click', function() {
+	if(hover_menu_tablet.contains = "open") {
+		hover_menu_tablet.classList.remove("open");
+	}
+})
+ 
+ 
 /**
  * Open contact popup
  */
@@ -140,21 +148,21 @@ close_menu_mobile.addEventListener('click', () => {
 
  var contact_btn = document.querySelector('.contact_btn')
  contact_btn.addEventListener('click', function() {
-     document.querySelector('.popup_contact_mobile').classList.add('open')
+     document.querySelector('.block_popup_contact_mobile').classList.add('open')
 	 dark_mode_menu_active.classList.add('active');
 	 document.body.style.overflow = "hidden";
  })
 
  var contact_header = document.querySelector('.contact_header')
  	contact_header.addEventListener('click', function() {
-	document.querySelector('.popup_contact_mobile').classList.add('open')
+	document.querySelector('.block_popup_contact_mobile').classList.add('open')
 	dark_mode_menu_active.classList.add('active');
 	document.body.style.overflow = "hidden";
 })
 
 var close_popup_mobile = document.querySelector('.close_popup_mobile')
 close_popup_mobile.addEventListener('click', function() {
-	document.querySelector('.popup_contact_mobile').classList.remove('open')
+	document.querySelector('.block_popup_contact_mobile').classList.remove('open')
 	dark_mode_menu_active.classList.remove('active');
 	document.body.style.overflow = "auto";
 })
@@ -162,7 +170,7 @@ close_popup_mobile.addEventListener('click', function() {
 var btn_choose_f = document.querySelectorAll('.btn_choose_f')
 btn_choose_f.forEach(btn_f => {
 	btn_f.addEventListener('click', function() {
-		document.querySelector('.popup_contact_mobile').classList.add('open')
+		document.querySelector('.block_popup_contact_mobile').classList.add('open')
 		dark_mode_menu_active.classList.add('active');
 		var data = btn_f.closest('.each_forfaits').getAttribute('data-forfait')
 		if(data == "professionel") {
@@ -177,7 +185,7 @@ btn_choose_f.forEach(btn_f => {
 
 var section_appel_contact = document.querySelector('.section_appel_contact .block_btn')
 	section_appel_contact.addEventListener('click', function() {
-	document.querySelector('.popup_contact_mobile').classList.add('open')
+	document.querySelector('.block_popup_contact_mobile').classList.add('open')
 	dark_mode_menu_active.classList.add('active');
 })
 
@@ -185,7 +193,7 @@ var contactUsMobile = document.getElementById('contactUsMobile')
 contactUsMobile.addEventListener('click', function() {
 	menu_mobile.classList.remove('active')
 	document.body.style.overflow = "auto";
-	document.querySelector('.popup_contact_mobile').classList.add('open')
+	document.querySelector('.block_popup_contact_mobile').classList.add('open')
 	dark_mode_menu_active.classList.add('active');
 })
 
