@@ -94,7 +94,7 @@ p {
 }
 .menu_mobile.active {
   visibility: visible;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   transform: translateY(0);
   transition: all 0.375s ease-in-out;
   opacity: 1;
@@ -244,7 +244,7 @@ p {
 }
 .block_popup_contact_mobile.open {
   visibility: visible;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   transform: translateY(0);
   transition: all 0.375s ease-in-out;
   opacity: 1;
