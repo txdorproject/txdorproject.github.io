@@ -79,7 +79,7 @@ scrollToSection(go_to_vitrine, document.querySelector('.big_block_vitrine').offs
 scrollToSection(go_to_ecommerce, document.querySelector('.big_block_ecommerce').offsetTop)
 scrollToSection(go_to_identite, document.querySelector('.big_block_identite').offsetTop)
 scrollToSection(go_to_forfaits, document.querySelector('.section_forfaits').offsetTop)
-scrollToSection(go_to_a_propros, document.querySelector('.section_about_us').offsetTop)
+scrollToSection(go_to_a_propros, document.querySelector('.section_what_we_do').offsetTop)
 scrollToSection(see_tarifs_service, document.querySelector('.section_forfaits').offsetTop)
 scrollToSection(tarif_btn, document.querySelector('.section_forfaits').offsetTop)
 
@@ -111,23 +111,28 @@ close_menu_mobile.addEventListener('click', () => {
 
  var services_click_dropdown = document.querySelector('.services_click_dropdown')
  var hover_menu_tablet = document.querySelector('.hover_menu_tablet')
+ var arrow_top_header = document.querySelector('.arrow_top_header')
  services_click_dropdown.addEventListener('mouseover', function() {
 	 hover_menu_tablet.classList.add('open')
+		arrow_top_header.classList.add('return')
  })
 
  hover_menu_tablet.addEventListener('mouseleave', function() {
 	hover_menu_tablet.classList.remove('open')
+	arrow_top_header.classList.remove('return')
  })
 
  var explain = document.querySelector('.explain')
  	explain.addEventListener('click', function() {
 	hover_menu_tablet.classList.remove('open')
+	arrow_top_header.classList.remove('return')
  })
 
  var each_services_menu_tablet = document.querySelectorAll('.each_services_menu_tablet')
  each_services_menu_tablet.forEach(elementMenu => {
 	 elementMenu.addEventListener('click', function() {
 		hover_menu_tablet.classList.remove('open')
+		arrow_top_header.classList.remove('return')
 	 })
  })
 
@@ -283,6 +288,10 @@ function setSuccessFor(input) {
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+/**
+ * Rotate chevron menu open
+ */
 
 
 /**
