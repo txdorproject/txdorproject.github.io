@@ -660,13 +660,13 @@ p {
                     position: relative;
 
                     .arrow_top_header {
-                        transition: ease-in .2s;
+                        transition: ease-in .1s;
                         position: relative;
                         top: -1px;
 
                         &.return {
                             transform: rotate(180deg);
-                            transition: ease-in .2s;
+                            transition: ease-in .1s;
                             color: rgb(145, 202, 255);
                         }
                     }
@@ -1643,7 +1643,7 @@ p {
 
     @media(min-width:768px) {
         max-width: 80% !important;
-        margin: 0 auto 10.5rem;
+        margin: 0 auto 12.5rem;
         padding: 1rem 0;
     }
 
@@ -1679,7 +1679,25 @@ p {
         }
 
         &::-webkit-scrollbar {
-            width: 1px;
+            height: 6px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+            border-radius: 2px;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgb(134, 134, 134); 
+            border-radius: 2px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgb(122, 122, 122); 
+            cursor: pointer;
         }
 
         .each_our_work {
@@ -1898,6 +1916,7 @@ p {
                 max-width: 100%;
                 padding: 12px 10px;
                 cursor: pointer;
+                border-radius: 20px;
 
                 @media(min-width:375px) {
                     padding: 12px 18px;
@@ -1922,6 +1941,8 @@ p {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            width: 85%;
+            margin: 6rem auto 0;
         }
 
         @media(min-width:1370px) {
@@ -1938,10 +1959,13 @@ p {
             padding: 0 17px 25px;
             margin-bottom: 3rem;
             cursor: pointer;
+            transition: ease-in .3s;
+            border-radius: 5px;
 
             &:hover {
-                box-shadow: 0px 4px 20px rgba(49, 49, 49, 0.178);
-                transition: ease-in .1s;
+                box-shadow: 0 0 16px rgb(0 0 0 / 10%);;
+                transition: ease-in .3s;
+                transform: scale(1.015);
             }
 
             @media(min-width:768px) {
@@ -1950,27 +1974,29 @@ p {
             }
 
             @media(min-width:1024px) {
-                width: 30%;
+                width: 32%;
             }
 
             &:nth-child(2) {
-                border: 1px solid transparent;
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
             }
 
             &:nth-child(3) {
-                border: 1px solid transparent;
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
             }
 
             .most_popular {
                 position: absolute;
                 background: #0075eb;
                 text-align: center;
-                top: -45px;
+                top: -41px;
                 font-weight: 600;
                 color: white;
                 padding: 13px 0;
-                left: -3px;
-                width: 102%;
+                left: -1px;
+                width: 100.6%;
             }
 
             .title_f {
@@ -1978,7 +2004,7 @@ p {
                 text-align: center;
                 font-weight: 700;
                 color: #2B2B2B;
-                font-size: 25px;
+                font-size: 24px;
             }
 
             .subtitle_f{
@@ -2141,13 +2167,14 @@ p {
 
         @media(min-width:1024px) {
             display: flex;
-            width: 75%;
+            width: 61%;
             padding: 2rem 3.3rem;
         }
 
         @media(min-width:1370px) {
-            width: 57%;
+            width: 52%;
             padding: 2rem 2.3rem;
+            justify-content: space-between;
         }
 
         @media(min-width:1650px) {
@@ -2162,7 +2189,7 @@ p {
 
             @media(min-width:1024px) {
                 text-align: left;
-                width: 67%;
+                width: 62%;
             }
 
             h3 {

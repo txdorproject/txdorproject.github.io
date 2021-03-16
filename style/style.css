@@ -628,13 +628,13 @@ p {
   position: relative;
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .arrow_top_header {
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
   position: relative;
   top: -1px;
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .arrow_top_header.return {
   transform: rotate(180deg);
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
   color: #91caff;
 }
 .section_top_presentation .header .inside_header .link_header .each_link_header .hover_menu_tablet {
@@ -1586,7 +1586,7 @@ p {
 @media (min-width: 768px) {
   .section_our_work {
     max-width: 80% !important;
-    margin: 0 auto 10.5rem;
+    margin: 0 auto 12.5rem;
     padding: 1rem 0;
   }
 }
@@ -1615,6 +1615,9 @@ p {
   white-space: nowrap;
   font-size: 0;
   padding-bottom: 5px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 @media (min-width: 768px) {
   .section_our_work .carrousel_our_work {
@@ -1622,7 +1625,19 @@ p {
   }
 }
 .section_our_work .carrousel_our_work::-webkit-scrollbar {
-  width: 1px;
+  height: 6px;
+}
+.section_our_work .carrousel_our_work::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 2px;
+}
+.section_our_work .carrousel_our_work::-webkit-scrollbar-thumb {
+  background: #868686;
+  border-radius: 2px;
+}
+.section_our_work .carrousel_our_work::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
+  cursor: pointer;
 }
 .section_our_work .carrousel_our_work .each_our_work {
   width: 215px;
@@ -1829,6 +1844,7 @@ p {
   max-width: 100%;
   padding: 12px 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
 @media (min-width: 375px) {
   .section_forfaits .choice_facturation .block_choice .each_choice {
@@ -1850,6 +1866,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 85%;
+    margin: 6rem auto 0;
   }
 }
 @media (min-width: 1370px) {
@@ -1867,10 +1885,13 @@ p {
   padding: 0 17px 25px;
   margin-bottom: 3rem;
   cursor: pointer;
+  transition: ease-in 0.3s;
+  border-radius: 5px;
 }
 .section_forfaits .block_for_forfaits .each_forfaits:hover {
-  box-shadow: 0px 4px 20px rgba(49, 49, 49, 0.178);
-  transition: ease-in 0.1s;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  transition: ease-in 0.3s;
+  transform: scale(1.015);
 }
 @media (min-width: 768px) {
   .section_forfaits .block_for_forfaits .each_forfaits {
@@ -1880,32 +1901,34 @@ p {
 }
 @media (min-width: 1024px) {
   .section_forfaits .block_for_forfaits .each_forfaits {
-    width: 30%;
+    width: 32%;
   }
 }
 .section_forfaits .block_for_forfaits .each_forfaits:nth-child(2) {
-  border: 1px solid transparent;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
 }
 .section_forfaits .block_for_forfaits .each_forfaits:nth-child(3) {
-  border: 1px solid transparent;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .most_popular {
   position: absolute;
   background: #0075eb;
   text-align: center;
-  top: -45px;
+  top: -41px;
   font-weight: 600;
   color: white;
   padding: 13px 0;
-  left: -3px;
-  width: 102%;
+  left: -1px;
+  width: 100.6%;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .title_f {
   margin-top: 35px;
   text-align: center;
   font-weight: 700;
   color: #2B2B2B;
-  font-size: 25px;
+  font-size: 24px;
 }
 .section_forfaits .block_for_forfaits .each_forfaits .subtitle_f {
   margin-top: 15px;
@@ -2050,14 +2073,15 @@ p {
 @media (min-width: 1024px) {
   .section_appel_contact .block_appel_contact {
     display: flex;
-    width: 75%;
+    width: 61%;
     padding: 2rem 3.3rem;
   }
 }
 @media (min-width: 1370px) {
   .section_appel_contact .block_appel_contact {
-    width: 57%;
+    width: 52%;
     padding: 2rem 2.3rem;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1650px) {
@@ -2074,7 +2098,7 @@ p {
 @media (min-width: 1024px) {
   .section_appel_contact .block_appel_contact .block_text {
     text-align: left;
-    width: 67%;
+    width: 62%;
   }
 }
 .section_appel_contact .block_appel_contact .block_text h3 {
